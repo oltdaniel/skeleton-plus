@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.plus.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/skeleton.plus.js"></script>
+    <title>Skeleton plus</title>
+    <meta name="description" content>
+    <meta name="author" content>
+  </head>
+  <body>
+    <style type="text/css">
+      .header {
+        margin-top:5em;
+        margin-bottom:5em;
+      }
+      .header > h2 {
+        font-weight: 300;
+      }
+      .header > .button {
+        margin-top: 10px;
+      }
+      .row-example > .row {
+        margin-bottom:10px;
+      }
+      footer {
+        margin-top: 4em;
+      }
+    </style>
+    <nav>
+      <div class="container">
+        <a class="brand">skeleton-plus</a>
+        <a class="button mobile-nav-button">Menu</a>
+        <ul class="navbar">
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="https://github.com/oltmannsdaniel/skeleton-plus">Github</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="well text-center header">
+        <h2>Skeleton plus : A dead simple, responsive boilerplate.</h2>
+        <a href="" class="button button-success">Download</a>
+      </div>
+    </div>
+    <div class="container" id="examples">
+      <p class="text-muted text-center">Tip: <code>Right-Mouse-Click > View Page Source</code> for see the code of the webpage<br><strong class="row">Complete Load Size without Jquery and Font &asymp; <code>12kb</code></strong></p>
+      <h3>Why Skeleton-plus and not Skeleton?</h3>
+      <p>Skeleton plus includes <b>more colors, a navabr and uses a faster Font</b>. Also Skeleton plus includes <b>minified Versions</b> of all needed Files. And one more Reason is the <b>Mobile Grid System</b> that helps you to display your layout also on smaller Devices than <u>550px</u>.</p>
+      <section id="grid">
+        <h3>Grid</h3>
+        <p>Skeleton plus have the same Grid System than Skeleton. So the grid consits of <u>12 columns and have a max-width of 960px</u>. Skeleton plus also includes the mobile Grid System.</p>
+        <div class="offset-by-one column">
+        <h4>Grid System</h4>
+        <p>The Grid System starts mostly with an div with the row class : <code>&lt;div class="row"&gt;...&lt;/div&gt;</code>.</p>
+        <div class="row-example">
+          <div class="row text-center">
+            <div class="one columns well">
+              1
+            </div>
+            <div class="one columns well">
+              1
+            </div>
+            <div class="one columns well">
+              1
+            </div>
+            <div class="one columns well">
+              1
+            </div>
+            <div class="one columns well">
+              1
+            </div>
+            <div class="one columns well">
+              1
+            </div>
+            <div class="one columns well">
+              1
+            </div>
+            <div class="one columns well">
+              1
+            </div>
+            <div class="one columns well">
+              1
+            </div>
+            <div class="one columns well">
+              1
+            </div>
+            <div class="one columns well">
+              1
+            </div>
+            <div class="one columns well">
+              1
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="two columns well">
+              2
+            </div>
+            <div class="two columns well">
+              2
+            </div>
+            <div class="two columns well">
+              2
+            </div>
+            <div class="two columns well">
+              2
+            </div>
+            <div class="two columns well">
+              2
+            </div>
+            <div class="two columns well">
+              2
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="four columns well">
+              4
+            </div>
+            <div class="four columns well">
+              4
+            </div>
+            <div class="four columns well">
+              4
+            </div>
+          </div>
+        </div>
+        <h4>Mobile Grid System</h4>
+        <p>The Mobile Grid System is the same as the normal Grid System but if you put <code>-sm</code> at the end of <code>column</code> or <code>columns</code> than th Grid will dispay as the same than on the Desktop.</p>
+        <div class="row-example">
+          <div class="row text-center">
+            <div class="one columns columns-sm well">
+              1
+            </div>
+            <div class="one columns columns-sm well">
+              1
+            </div>
+            <div class="one columns columns-sm well">
+              1
+            </div>
+            <div class="one columns columns-sm well">
+              1
+            </div>
+            <div class="one columns columns-sm well">
+              1
+            </div>
+            <div class="one columns columns-sm well">
+              1
+            </div>
+            <div class="one columns columns-sm well">
+              1
+            </div>
+            <div class="one columns columns-sm well">
+              1
+            </div>
+            <div class="one columns columns-sm well">
+              1
+            </div>
+            <div class="one columns columns-sm well">
+              1
+            </div>
+            <div class="one columns columns-sm well">
+              1
+            </div>
+            <div class="one columns columns-sm well">
+              1
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="two columns columns-sm well">
+              2
+            </div>
+            <div class="two columns columns-sm well">
+              2
+            </div>
+            <div class="two columns columns-sm well">
+              2
+            </div>
+            <div class="two columns columns-sm well">
+              2
+            </div>
+            <div class="two columns columns-sm well">
+              2
+            </div>
+            <div class="two columns columns-sm well">
+              2
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="four columns columns-sm well">
+              4
+            </div>
+            <div class="four columns columns-sm well">
+              4
+            </div>
+            <div class="four columns columns-sm well">
+              4
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <section id="typographic">
+        <h3>Typographic</h3>
+        <div class="row offset-by-one column">
+          <div class="six columns">
+            <p>This is a Paragraph without a class</p>
+            <p class="text-success">This is a Paragraph with a success class</p>
+            <p class="text-danger">This is a Paragraph with a danger class</p>
+            <p class="text-warning">This is a Paragraph with a warning class</p>
+            <p class="text-muted">This is a Paragraph with a muted class</p>
+            <p>Strong text in a Paragraph <strong>looks like this</strong> or bold <b>like this</b></p>
+            <p>A link in a Paragraph <a>looks like this</a> and code <code>looks like this</code></p>
+            <p>Underlined and Italic Text in a Paragraph <u>looks like this</u> ot <i>this</i></p>
+          </div>
+          <div class="six columns">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </div>
+        </div>
+        <p>Also you can use our <code>text-</code> classes for positioning your text</p>
+        <p class="text-left">Left pulled Text with <code>text-left</code> class</p>
+        <p class="text-center">Centered Text with <code>text-center</code> class</p>
+        <p class="text-right">Right pulled Text with <code>text-right</code> class</p>
+        <p class="text-upper">Uppercased Text with <code class="text-lower">text-upper</code> class</p>
+        <p class="text-lower">Lowercased Text with <code>text-lower</code> class</p>
+        <p class="text-capit">Capitalized Text with <code class="text-lower">text-capit</code> class</p>
+      </section>
+      <section id="input">
+        <h3>Input</h3>
+        <p>Skeleton plus includes all skeleton button colors, so normal with a black border and a primary. The plus Version includes also <font class="text-danger">danger</font>,<font class="text-warning">warning</font> and <font class="text-success">success</font> Button colors.</p>
+        <button>Normal Button</button>
+        <button class="button-primary">Primary Button</button>
+        <button class="button-warning">Warning Button</button>
+        <button class="button-danger">Danger Button</button>
+        <button class="button-success">Success Button</button>
+        <p>Skeleton plus also includes the normal input fields from Skeleton. But the plus Version includes a has-error and has-success Input class to change the border color.</p>
+        <div class="row">
+          <div class="six columns">
+            <input type="text" class="has-error u-full-width" placeholder="Your email ...">
+          </div>
+          <div class="six columns">
+            <select class="u-full-width has-success">
+              <option value="">Support</option>
+              <option value="">Question</option>
+              <option value="">Prices</option>
+            </select>
+          </div>
+        </div>
+        <textarea class="u-full-width" placeholder="Your message ..."></textarea>
+        <div class="row">
+          <div class="six columns columns-sm">
+            <button class="button button-success">Send</button>
+          </div>
+          <div class="six columns columns-sm text-center">
+            <input type="checkbox"> Send me a reply.
+          </div>
+        </div>
+      </section>
+      <section id="lists">
+        <h3>Lists</h3>
+        <p>Sekelton plus includes only the Skeleton lists attributes and classe, no other special things. So just use the normal Skeleton classes for creating a list.</p>
+        <div class="row">
+          <div class="six columns">
+            <ul>
+              <li>Just a simple list</li>
+              <li>
+                Underordered List
+                <ul>
+                  <li>Underordered Item #1</li>
+                  <li>Underordered Item #2</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="six columns">
+            <ol>
+              <li>Just a simple list</li>
+              <li>
+                Underordered List
+                <ol>
+                  <li>Underordered Item</li>
+                  <li>Underordered Item</li>
+                </ol>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="code">
+        <h3>Code</h3>
+        <p>This classes from the normal Skeleton class helps you to display simple code correctly, but without any syntax higlighting.</p>
+        <p>This is working in a Paragraph <code>like this</code></p>
+        <pre><code>
+          Or in a Bigger Version
+
+          .container {
+            margin:auto;
+          }
+        </code></pre>
+      </section>
+      <section id="tables">
+        <h3>Tables</h3>
+        <p>The Table functions are the same than in Skeleton. Maybe in the future we add some more classes with <b>c</b><font class="text-success">o</font>l<font class="text-warning">o</font>r<font class="text-danger">s</font>.</p>
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Hobbies</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Daniel Oltmanns</td>
+              <td>14</td>
+              <td>Web Development ans Sport</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Jorge Anonymus</td>
+              <td>21</td>
+              <td>Web Designing</td>
+              <td>Germany</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="navbar">
+        <h3>Navbar</h3>
+        <p>Specially and only included is the Navbar in Skeleton plus. But for using the navbar you should load the <code>skeleton.plus.js</code>. This´Scripts is only for showing Dropdowns.</p>
+        <nav>
+          <div class="container">
+            <a class="brand">Brand</a>
+            <a class="button mobile-nav-button">Menu</a>
+            <ul class="navbar">
+              <li><a>Link</a></li>
+              <li><a>Link</a></li>
+              <li>
+                <a>Dropdown Example</a>
+                <ul class="drop-content">
+                  <li>#1 Link</li>
+                  <li>#2 Link</li>
+                  <li>#3 Link</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+    </div>
+  </body>
+  <footer class="text-center">
+    <p>&#9400; Copyright by <a href="http://github.com/oltmannsdaniel">Daniel Oltmanns</a>. <b>2016</b></p>
+  </footer>
+</html>
