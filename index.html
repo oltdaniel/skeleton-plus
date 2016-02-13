@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.plus.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/skeleton.plus.js"></script>
     <title>Skeleton plus</title>
     <meta name="description" content>
     <meta name="author" content>
@@ -30,15 +28,14 @@
         margin-top: 4em;
       }
     </style>
-    <nav>
-      <div class="container">
-        <a class="brand">skeleton-plus</a>
-        <a class="button mobile-nav-button">Menu</a>
-        <ul class="navbar">
-          <li><a href="#examples">Examples</a></li>
-          <li><a href="https://github.com/oltmannsdaniel/skeleton-plus">Github</a></li>
-        </ul>
-      </div>
+    <nav class="container">
+      <a class="brand">skeleton-plus</a>
+      <label for="nav-menu-button" class="button">Menu</label>
+      <input type="checkbox" id="nav-menu-button" />
+      <ul>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="https://github.com/oltmannsdaniel/skeleton-plus">Github</a></li>
+      </ul>
     </nav>
     <div class="row">
       <div class="well text-center header">
@@ -126,46 +123,24 @@
               4
             </div>
           </div>
+          <div class="row text-center">
+            <div class="six columns well">
+              6
+            </div>
+            <div class="six columns well">
+              6
+            </div>
+          </div>
         </div>
         <h4>Mobile Grid System</h4>
-        <p>The Mobile Grid System is the same as the normal Grid System but if you put <code>-sm</code> at the end of <code>column</code> or <code>columns</code> than th Grid will dispay as the same than on the Desktop.</p>
+        <p>The Mobile Grid System is the same as the normal Grid System but if you put <code>-sm</code> at the end of <code>column</code> or <code>columns</code> than th Grid will dispay as the same than on the Desktop.<br><font class="text-muted">Problem: If you use twelve times <code>one columns-sm</code> the last item moves to the next line</font></p>
         <div class="row-example">
           <div class="row text-center">
-            <div class="one columns columns-sm well">
-              1
+            <div class="six columns columns-sm well">
+              6
             </div>
-            <div class="one columns columns-sm well">
-              1
-            </div>
-            <div class="one columns columns-sm well">
-              1
-            </div>
-            <div class="one columns columns-sm well">
-              1
-            </div>
-            <div class="one columns columns-sm well">
-              1
-            </div>
-            <div class="one columns columns-sm well">
-              1
-            </div>
-            <div class="one columns columns-sm well">
-              1
-            </div>
-            <div class="one columns columns-sm well">
-              1
-            </div>
-            <div class="one columns columns-sm well">
-              1
-            </div>
-            <div class="one columns columns-sm well">
-              1
-            </div>
-            <div class="one columns columns-sm well">
-              1
-            </div>
-            <div class="one columns columns-sm well">
-              1
+            <div class="six columns columns-sm well">
+              6
             </div>
           </div>
           <div class="row text-center">
@@ -213,7 +188,7 @@
             <p class="text-muted">This is a Paragraph with a muted class</p>
             <p>Strong text in a Paragraph <strong>looks like this</strong> or bold <b>like this</b></p>
             <p>A link in a Paragraph <a>looks like this</a> and code <code>looks like this</code></p>
-            <p>Underlined and Italic Text in a Paragraph <u>looks like this</u> ot <i>this</i></p>
+            <p>Underlined and Italic Text in a Paragraph <u>looks like this</u> or <i>this</i></p>
           </div>
           <div class="six columns">
             <h1>Heading 1</h1>
@@ -335,25 +310,7 @@
       </section>
       <section id="navbar">
         <h3>Navbar</h3>
-        <p>Specially and only included is the Navbar in Skeleton plus. But for using the navbar you should load the <code>skeleton.plus.js</code>. This´Scripts is only for showing Dropdowns.</p>
-        <nav>
-          <div class="container">
-            <a class="brand">Brand</a>
-            <a class="button mobile-nav-button">Menu</a>
-            <ul class="navbar">
-              <li><a>Link</a></li>
-              <li><a>Link</a></li>
-              <li>
-                <a>Dropdown Example</a>
-                <ul class="drop-content">
-                  <li>#1 Link</li>
-                  <li>#2 Link</li>
-                  <li>#3 Link</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <p>Specially and only included is the Navbar in Skeleton plus. <b>Example is on the top.</b></p>
       </section>
     </div>
   </body>

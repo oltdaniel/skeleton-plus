@@ -130,7 +130,7 @@
     margin-left: 0; }
 
   .one.column-sm,
-  .one.columns-sm                    { width: 4.66666666667%; }
+  .one.columns-sm                    { width: 4.33333333333%; }
   .two.columns-sm                    { width: 13.3333333333%; }
   .three.columns-sm                  { width: 22%;            }
   .four.columns-sm                   { width: 30.6666666667%; }
@@ -327,6 +327,7 @@ input[type="button"].button-primary:focus {
 	border-color: #F44336;
 	color:#fff; }
 .button-danger:hover {
+  color:#fff;
 	background-color: #E33124;
 	border-color: #E33124; }
 .button-warning {
@@ -334,6 +335,7 @@ input[type="button"].button-primary:focus {
 	border-color: #FFA726;
 	color:#fff; }
 .button-warning:hover {
+  color:#fff;
 	background-color: #ED9C26;
 	border-color: #ED9C26; }
 .button-success {
@@ -341,12 +343,9 @@ input[type="button"].button-primary:focus {
 	border-color: #8BC34A;
 	color:#fff; }
 .button-success:hover {
+  color:#fff;
 	background-color: #6DAD23;
 	border-color: #6DAD23; }
-.button-danger:hover,
-.button-warning:hover,
-.button-success:hover {
-	color:#fff; }
 
 
 /* Forms
@@ -584,57 +583,35 @@ there.
 
 /* Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: Require skeleton.plus.js
-*/
-nav {
-	margin-top: 5px;
-	font-weight: 300;
-}
-.navbar {
-	list-style: none;
-	display: inline;
-}
-.navbar li {
-	display: inline;
-	padding:2px 10px;
-	font-size: 18px;
-	font-weight: 400;
-}
-.navbar li a {
-	text-decoration: none;
-	color:black;
-}
-.dropdown {
-	cursor: default;
-}
-.drop-content {
-	padding:0;
-	margin:2px;
-	margin-bottom: -30px;
-}
-.drop-content li a {
-	color:#1EAEDB;
-}
-nav a.brand {
-	text-decoration: none;
-	font-weight: 300;
-	font-size: 25px;
-	padding-right: 20px;
-}
-nav .mobile-nav-button {
-  display:none;
-}
-@media (max-width: 567px) {
-	nav {
-		text-align:center;
-	}
-	.navbar li {
-		display:block;
-	}
-  nav .mobile-nav-button {
-    display:inline-block;
-  }
+nav ul {
+  width: 100%;
+  display: inline;
+  margin-left: 1em;
+  text-align: center; }
+nav .brand {
+  font-weight: 300;
+  font-size: 2em; }
+nav [for="nav-menu-button"],
+nav [id="nav-menu-button"] {
+  display: none; }
+nav ul li {
+  display: inline-block;
+  min-width: 4.5em;
+  font-size: 1.2em; }
+nav ul li a {
+  text-decoration: none;
+  color: black; }
+@media (max-width: 550px) {
+	nav [for="nav-menu-button"] {
+    display: inline-block; }
+  nav .brand {
+    padding-right: 1em;
+    padding-left: 1em; }
+  nav ul li {
+    display: none;
+    width: 100%; }
+  nav [id="nav-menu-button"]:checked + ul li {
+    display: inline-block; }
 }
 
 /* Other Elements
