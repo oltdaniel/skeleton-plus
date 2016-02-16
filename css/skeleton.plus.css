@@ -226,25 +226,25 @@ p {
   margin-top: 0; }
 
 .text-center {
-	text-align: center; }
+  text-align: center; }
 
 .text-left {
-	text-align: left; }
+  text-align: left; }
 
 .text-right {
-	text-align: right; }
+  text-align: right; }
 
 .text-danger {
-	color:#F44336; }
+  color:#F44336; }
 
 .text-warning {
-	color:#FFA726; }
+  color:#FFA726; }
 
 .text-success {
-	color:#8BC34A; }
+  color:#8BC34A; }
 
 .text-muted {
-	color:gray; }
+  color:gray; }
 
 .text-upper {
   text-transform: uppercase; }
@@ -323,29 +323,29 @@ input[type="button"].button-primary:focus {
   background-color: #1EAEDB;
   border-color: #1EAEDB; }
 .button-danger {
-	background-color: #F44336;
-	border-color: #F44336;
-	color:#fff; }
+  background-color: #F44336;
+  border-color: #F44336;
+  color:#fff; }
 .button-danger:hover {
   color:#fff;
-	background-color: #E33124;
-	border-color: #E33124; }
+  background-color: #E33124;
+  border-color: #E33124; }
 .button-warning {
-	background-color: #FFA726;
-	border-color: #FFA726;
-	color:#fff; }
+  background-color: #FFA726;
+  border-color: #FFA726;
+  color:#fff; }
 .button-warning:hover {
   color:#fff;
-	background-color: #ED9C26;
-	border-color: #ED9C26; }
+  background-color: #ED9C26;
+  border-color: #ED9C26; }
 .button-success {
-	background-color: #8BC34A;
-	border-color: #8BC34A;
-	color:#fff; }
+  background-color: #8BC34A;
+  border-color: #8BC34A;
+  color:#fff; }
 .button-success:hover {
   color:#fff;
-	background-color: #6DAD23;
-	border-color: #6DAD23; }
+  background-color: #6DAD23;
+  border-color: #6DAD23; }
 
 
 /* Forms
@@ -597,17 +597,28 @@ nav [id="nav-menu-button"] {
 nav ul li {
   display: inline-block;
   min-width: 4.5em;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  position: relative; }
 nav ul li a {
   text-decoration: none;
-  color: black; }
+  color: black;
+  text-align: center; }
+nav ul li ul {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: #fff;
+  margin: 0;
+  padding:0; }
+nav ul li:hover ul {
+  display: block; }
 @media (max-width: 550px) {
-	nav [for="nav-menu-button"] {
+  nav [for="nav-menu-button"] {
     display: inline-block; }
   nav .brand {
     padding-right: 1em;
     padding-left: 1em; }
-  nav ul li {
+  nav > ul > li {
     display: none;
     width: 100%; }
   nav [id="nav-menu-button"]:checked + ul li {
@@ -617,10 +628,10 @@ nav ul li a {
 /* Other Elements
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .well {
-	padding:10px;
-	padding-top: 15px;
-	background-color: #F5F5F5;
-	border-radius: 3px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+  padding:10px;
+  padding-top: 15px;
+  background-color: #F5F5F5;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
