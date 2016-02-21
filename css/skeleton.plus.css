@@ -607,6 +607,8 @@ nav ul li ul {
   display: none;
   position: absolute;
   z-index: 2;
+  margin: 0;
+  padding:0;
   background-color: #fff;
   -webkit-box-shadow: 2px 2px 31px -9px rgba(0,0,0,0.75);
   -moz-box-shadow: 2px 2px 31px -9px rgba(0,0,0,0.75);
