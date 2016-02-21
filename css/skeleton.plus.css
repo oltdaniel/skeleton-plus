@@ -608,8 +608,15 @@ nav ul li ul {
   position: absolute;
   z-index: 2;
   background-color: #fff;
-  margin: 0;
-  padding:0; }
+  -webkit-box-shadow: 2px 2px 31px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 2px 31px -9px rgba(0,0,0,0.75);
+  box-shadow: 2px 2px 31px -9px rgba(0,0,0,0.75);
+  padding:10px 0px 10px 0px;
+  border-radius: 4px;
+  border: 1px solid #EDEDED;
+  min-width: 160px; }
+nav ul li ul li {
+  width:100%; }
 nav ul li:hover ul {
   display: block; }
 @media (max-width: 550px) {
@@ -623,6 +630,10 @@ nav ul li:hover ul {
     width: 100%; }
   nav [id="nav-menu-button"]:checked + ul li {
     display: inline-block; }
+  nav ul li ul {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0); }
 }
 
 /* Other Elements
