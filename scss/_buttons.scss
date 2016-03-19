@@ -1,0 +1,66 @@
+
+/*
+Buttons
+*/
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: darken($muted ,30%);
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid darken($muted ,30%);
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  color: darken($muted ,60%);
+  border-color: darken($muted ,60%);
+  outline: 0; }
+.button-primary {
+  color: $white;
+  background-color: $primary;
+  border-color: $primary; }
+.button-primary:hover {
+  color: $white;
+  background-color: darken($primary, 10%);
+  border-color: darken($primary, 10%); }
+.button-danger {
+  background-color: $danger;
+  border-color: $danger;
+  color: $white; }
+.button-danger:hover {
+  color: $white;
+  background-color: darken($danger, 10%);
+  border-color: darken($danger, 10%); }
+.button-warning {
+  color: $white;
+  background-color: $warning;
+  border-color: $warning; }
+.button-warning:hover {
+  color: $white;
+  background-color: darken($warning, 10%);
+  border-color: darken($warning, 10%); }
+.button-success {
+  color: $white;
+  background-color: $success;
+  border-color: $success; }
+.button-success:hover {
+  color: $white;
+  background-color: darken($success, 10%);
+  border-color: darken($success, 10%); }
