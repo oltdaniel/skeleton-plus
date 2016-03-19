@@ -1,0 +1,22 @@
+{
+	"name": "skeleton-plus",
+	"version": "1.0.4",
+	"description": "This is an Plus Version of Skeleton.css and PURE css http://oltmannsdaniel.github.io/skeleton-plus",
+	"author": "Daniel Oltmanns <https://github.com/oltmannsdaniel>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/oltmannsdaniel/skeleton-plus"
+	},
+	"keywords": [
+		"skeleton", "skeleton-plus", "boilerplate", "simple", "css"
+	],
+  "devDependencies": {
+    "node-sass": "^3.4.2",
+    "nodemon": "^1.9.1"
+  },
+  "scripts": {
+	 "build-css": "node-sass --include-path scss scss/main.scss css/skeleton.plus.css",
+	 "watch-css": "nodemon -e scss -x \"npm run build-css\""
+	},
+	"license": "MIT"
+}
