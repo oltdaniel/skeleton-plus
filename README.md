@@ -9,11 +9,13 @@ Skeleton plus include more colors and functions than the normal Skeleton Version
 #How to install ?
 
 Github
+
   Clone the repo from Github with:
 
   `git clone https://github.com/oltmannsdaniel/skeleton-plus.git`
 
 NPM
+
   Install skeleton-plus over the Node.js NPM Manager:
 
   `npm install skeleton-plus`
