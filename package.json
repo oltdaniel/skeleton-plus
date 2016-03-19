@@ -15,7 +15,7 @@
     "nodemon": "^1.9.1"
   },
   "scripts": {
-	  "build-css": "node-sass --include-path scss scss/main.scss css/skeleton.plus.css && node-sass --include-path scss scss/main.scss css/skeleton.plus.min.css css/normalize.css --output-style compressed",
+	  "build-css": "node-sass --include-path scss scss/main.scss css/skeleton.plus.css && node-sass --include-path scss scss/main.scss css/skeleton.plus.min.css --output-style compressed",
 	  "watch-css": "nodemon -e scss -x \"npm run build-css\""
 	},
 	"license": "MIT"
