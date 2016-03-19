@@ -9,7 +9,8 @@ input[type="tel"],
 input[type="url"],
 input[type="password"],
 textarea,
-select {
+select,
+*[contenteditable] {
   height: 38px;
   padding: 6px 10px;
   background-color: $white;
@@ -43,7 +44,8 @@ input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
-select:focus {
+select:focus,
+*[contenteditable]:focus {
   border: 1px solid $primary;
   outline: 0; }
 label,
