@@ -1,0 +1,44 @@
+$danger  :#e74c3c ;
+$success :#2ecc71 ;
+$warning :#f39c12 ;
+$primary :#3498db ;
+$default :#ffffff ;
+
+.callout{
+  position: relative;
+  height: 100px;
+  padding: 15px;
+  border: 1px solid #c1c1c1;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #c1c1c1;
+
+  .danger{
+    background-color: $danger;
+    color: $default;
+  }
+  .success{
+    background-color: $success;
+    color: $default;
+  }
+  .warning{
+    background-color: $warning;
+    color: $default;
+  }
+  .primary{
+    background-color: $primary;
+    color: $default;
+  }
+  .default{
+    background-color: $default;
+    color: #000000;
+  }
+  .full-width{
+    width: 100%;
+  }
+  .half-width{
+    width: 50%;
+  }
+  .auto-width{
+    width: auto;
+  }
+}
