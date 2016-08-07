@@ -701,6 +701,35 @@ Media Queries
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
+.callout {
+  position: relative;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #c1c1c1;
+  border-radius: 4px; }
+  .callout.danger {
+    background-color: #F44336;
+    border-color: #F44336;
+    color: #FFF; }
+  .callout.success {
+    background-color: #8BC34A;
+    border-color: #8BC34A;
+    color: #FFF; }
+  .callout.warning {
+    background-color: #FFA726;
+    border-color: #FFA726;
+    color: #FFF; }
+  .callout.primary {
+    background-color: #1EAEDB;
+    border-color: #1EAEDB;
+    color: #FFF; }
+  .callout.full-width {
+    width: 100%; }
+  .callout.half-width {
+    width: 50%; }
+  .callout.auto-width {
+    width: auto; }
+
 /*
 Other Elements
 */

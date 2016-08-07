@@ -29,5 +29,15 @@ NPM
   `<link rel="stylesheet" href="skeleton-plus/skeleton.plus.css">`
 
 
+# Development
+
+Install all Dependencies :
+
+`$ npm install gulp -g && npm install`
+
+Start gulp-watch:
+
+`$ gulp sass:watch`
+
 # Example Page
 http://oltmannsdaniel.github.io/skeleton-plus
