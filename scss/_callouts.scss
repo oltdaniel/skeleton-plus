@@ -1,44 +1,37 @@
-$danger  :#e74c3c ;
-$success :#2ecc71 ;
-$warning :#f39c12 ;
-$primary :#3498db ;
-$default :#ffffff ;
-
 .callout{
   position: relative;
-  height: 100px;
   padding: 15px;
+  margin: 10px 0;
   border: 1px solid #c1c1c1;
   border-radius: 4px;
-  box-shadow: 0 0 10px #c1c1c1;
 
-  .danger{
+  &.danger{
     background-color: $danger;
+    border-color: $danger;
     color: $default;
   }
-  .success{
+  &.success{
     background-color: $success;
+    border-color: $success;
     color: $default;
   }
-  .warning{
+  &.warning{
     background-color: $warning;
+    border-color: $warning;
     color: $default;
   }
-  .primary{
+  &.primary{
     background-color: $primary;
+    border-color: $primary;
     color: $default;
   }
-  .default{
-    background-color: $default;
-    color: #000000;
-  }
-  .full-width{
+  &.full-width{
     width: 100%;
   }
-  .half-width{
+  &.half-width{
     width: 50%;
   }
-  .auto-width{
+  &.auto-width{
     width: auto;
   }
 }
