@@ -13,9 +13,9 @@ gulp.task('sass', function () {
     }))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(banner('/* skeleton-plus <https://github.com/oltmannsdaniel/skeleton-plus> , Copyright 2016, Daniel Oltmanns <daniel@thedcdesigns.com> */\n', {}))
-    .pipe(gulp.dest('./public/css'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('sass:watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch('./scss/*.scss', ['sass']);
 });
