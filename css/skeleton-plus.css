@@ -1,3 +1,4 @@
+/* skeleton-plus <https://github.com/oltmannsdaniel/skeleton-plus> , Copyright 2016, Daniel Oltmanns <daniel@thedcdesigns.com> */
 /*
 * Skeleton Plus
 * Created 2016, Daniel Oltmanns (http://github.com/oltmannsdaniel/)
@@ -330,7 +331,7 @@ input[type="button"] {
   border-radius: 4px;
   border: 1px solid #6f6f6f;
   cursor: pointer;
-  box-sizing: border-box; }
+  margin: 5px 0; }
 
 .button:hover,
 button:hover,
@@ -580,82 +581,22 @@ pre > code {
 /*
 Navigation
 */
-nav ul {
-  width: 100%;
-  display: inline;
-  margin-left: 1em;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none; }
-
-nav .brand {
-  font-weight: 300;
-  font-size: 2em; }
-
-nav [for="nav-menu-button"],
-nav [id="nav-menu-button"] {
-  display: none; }
-
-nav ul li {
-  display: inline-block;
-  min-width: 4.5em;
-  font-size: 1.2em;
-  position: relative; }
-
-nav ul li a {
-  text-decoration: none;
-  color: black;
-  text-align: center; }
-
-nav ul li ul {
-  display: none;
-  position: absolute;
-  z-index: 2;
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  -webkit-box-shadow: 2px 2px 31px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 2px 31px -9px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 2px 31px -9px rgba(0, 0, 0, 0.75);
-  padding: 10px 0px 10px 0px;
-  border-radius: 4px;
-  border: 1px solid #EDEDED;
-  min-width: 160px; }
-
-nav li > a:after {
-  content: " +"; }
-
-nav li > a:only-child:after {
-  content: ""; }
-
-nav ul li ul li {
-  width: 100%; }
-
-nav ul li:hover ul {
-  display: block; }
-
-@media (max-width: 550px) {
-  nav [for="nav-menu-button"] {
+nav {
+  margin-top: 20px !important; }
+  nav a.brand {
+    font-weight: 600; }
+  nav * {
     display: inline-block; }
-  nav .brand {
-    padding-right: 1em;
-    padding-left: 1em; }
   nav ul {
-    margin-left: 0; }
-  nav > ul > li {
-    display: none;
-    width: 100%; }
-  nav [id="nav-menu-button"]:checked + ul li {
-    display: inline-block; }
-  nav ul li ul {
-    background-color: #fff;
-    padding: 10px 0px 10px 0px;
-    border-radius: 0;
-    border: none;
-    min-width: 160px; } }
+    float: right; }
+    nav ul li {
+      padding: 0 15px; }
+    @media (max-width: 550px) {
+      nav ul {
+        width: 100%; } }
+  @media (max-width: 550px) {
+    nav {
+      text-align: center; } }
 
 /*
 Utilities
