@@ -1,0 +1,90 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 5px;
+
+  .content {
+    position: absolute;
+    font-size: 1rem;
+    z-index: 1;
+    visibility: hidden;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%) translateY(-100%);
+    background-color: #ededed;
+    padding: 5px 20px;
+    border-radius: 3px;
+    transition: opacity 0.3s;
+    opacity: 0;
+    min-width: 160px;
+
+    &, * {
+      color: #000;
+    }
+
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 100%; /* At the bottom of the tooltip */
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: #ededed transparent transparent transparent;
+    }
+  }
+
+  &:hover .content {
+    visibility: visible;
+    opacity: 0.9;
+  }
+
+  &.success .content {
+    background-color: $success;
+
+    &, * {
+      color: $white;
+    }
+
+    &:after {
+      border-color: $success transparent transparent transparent;
+    }
+  }
+
+  &.primary .content {
+    background-color: $primary;
+
+    &, * {
+      color: $white;
+    }
+
+    &:after {
+      border-color: $primary transparent transparent transparent;
+    }
+  }
+
+  &.danger .content {
+    background-color: $danger;
+
+    &, * {
+      color: $white;
+    }
+
+    &:after {
+      border-color: $danger transparent transparent transparent;
+    }
+  }
+
+  &.warning .content {
+    background-color: $warning;
+
+    &, * {
+      color: $white;
+    }
+
+    &:after {
+      border-color: $warning transparent transparent transparent;
+    }
+  }
+}
