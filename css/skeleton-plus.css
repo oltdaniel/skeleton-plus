@@ -343,6 +343,7 @@ input[type="button"] {
   border: 1px solid #6f6f6f;
   cursor: pointer;
   margin: 5px 0;
+  -webkit-transition: background-color 0.3s, border-color 0.3s;
   transition: background-color 0.3s, border-color 0.3s; }
 
 .button:hover,
@@ -416,6 +417,7 @@ select,
   box-sizing: border-box;
   width: 100%;
   margin-top: .5em;
+  -webkit-transition: border-color 0.3s;
   transition: border-color 0.3s; }
 
 input[type="email"],
@@ -696,10 +698,12 @@ Media Queries
     visibility: hidden;
     left: 50%;
     top: 0;
+    -webkit-transform: translateX(-50%) translateY(-100%);
     transform: translateX(-50%) translateY(-100%);
     background-color: #ededed;
     padding: 5px 20px;
     border-radius: 3px;
+    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     opacity: 0;
     min-width: 160px; }
