@@ -6,19 +6,19 @@ This is an Plus Version of Skeleton.css
 Skeleton plus include more colors and functions than the normal Skeleton Version.
 
 
-#How to install ?
+## How to install ?
 
-Github
+#### Github
 
   Clone the repo from Github with:
 
-  `git clone https://github.com/oltmannsdaniel/skeleton-plus.git`
+  `$ git clone https://github.com/oltmannsdaniel/skeleton-plus.git`
 
-NPM
+#### NPM
 
   Install skeleton-plus over the Node.js NPM Manager:
 
-  `npm install skeleton-plus`
+  `$ npm install skeleton-plus --save`
 
   With ExpressJs you should use following code:
 
@@ -28,8 +28,14 @@ NPM
 
   `<link rel="stylesheet" href="skeleton-plus/skeleton.plus.css">`
 
+#### CDN
+	
+  Thanks to the Github CDN for serving skeleton-plus over an CDN:
 
-# Development
+  `https://cdn.rawgit.com/oltmannsdaniel/skeleton-plus/master/css/skeleton-plus.min.css`
+
+
+## Development
 
 Install all Dependencies :
 
@@ -39,5 +45,5 @@ Start gulp-watch:
 
 `$ gulp sass:watch`
 
-# Example Page
-http://oltmannsdaniel.github.io/skeleton-plus
+## Example Page
+[http://oltmannsdaniel.github.io/skeleton-plus](http://oltmannsdaniel.github.io/skeleton-plus)
