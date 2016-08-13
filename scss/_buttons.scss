@@ -23,7 +23,8 @@ input[type="button"] {
   border-radius: 4px;
   border: 1px solid darken($muted ,30%);
   cursor: pointer;
-  margin: 5px 0; }
+  margin: 5px 0;
+  transition: background-color 0.3s, border-color 0.3s; }
 .button:hover,
 button:hover,
 input[type="submit"]:hover,
