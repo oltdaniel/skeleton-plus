@@ -55,6 +55,10 @@
   &.primary .content {
     background-color: $primary;
 
+    &, * {
+      color: $white;
+    }
+
     &:after {
       border-color: $primary transparent transparent transparent;
     }
@@ -63,6 +67,10 @@
   &.danger .content {
     background-color: $danger;
 
+    &, * {
+      color: $white;
+    }
+
     &:after {
       border-color: $danger transparent transparent transparent;
     }
@@ -70,6 +78,10 @@
 
   &.warning .content {
     background-color: $warning;
+
+    &, * {
+      color: $white;
+    }
 
     &:after {
       border-color: $warning transparent transparent transparent;

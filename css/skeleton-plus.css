@@ -408,7 +408,6 @@ input[type="password"],
 textarea,
 select,
 *[contenteditable] {
-  height: 38px;
   padding: 6px 10px;
   background-color: #fff;
   border: 1px solid #bbb;
@@ -730,14 +729,20 @@ Media Queries
       border-color: #8BC34A transparent transparent transparent; }
   .tooltip.primary .content {
     background-color: #1EAEDB; }
+    .tooltip.primary .content, .tooltip.primary .content * {
+      color: #fff; }
     .tooltip.primary .content:after {
       border-color: #1EAEDB transparent transparent transparent; }
   .tooltip.danger .content {
     background-color: #F44336; }
+    .tooltip.danger .content, .tooltip.danger .content * {
+      color: #fff; }
     .tooltip.danger .content:after {
       border-color: #F44336 transparent transparent transparent; }
   .tooltip.warning .content {
     background-color: #FFA726; }
+    .tooltip.warning .content, .tooltip.warning .content * {
+      color: #fff; }
     .tooltip.warning .content:after {
       border-color: #FFA726 transparent transparent transparent; }
 
