@@ -1,4 +1,7 @@
 # skeleton-plus
+
+![NPM Downloads](https://img.shields.io/npm/dt/skeleton-plus.svg)
+
 This is an Plus Version of Skeleton.css
 
 
