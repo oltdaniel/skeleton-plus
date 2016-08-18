@@ -19,7 +19,22 @@ select,
   box-sizing: border-box;
   width: 100%;
   margin-top: .5em;
-  transition: border-color 0.3s; }
+  transition: border-color 0.3s;
+
+  &:focus {
+    border: 1px solid $primary;
+    outline: 0;
+  }
+
+  &:focus.has-error, &.has-error {
+    border: 1px solid $danger;
+  }
+
+  &:focus.has-success, &.has-success {
+    border: 1px solid $success;
+  }
+}
+
 input[type="email"],
 input[type="number"],
 input[type="search"],
@@ -28,74 +43,35 @@ input[type="tel"],
 input[type="url"],
 input[type="password"],
 textarea {
-  appearance: none; }
+  appearance: none;
+}
+
 textarea {
   min-height: 65px;
   padding-top: 6px;
   padding-bottom: 6px;
-  resize:vertical; }
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="text"]:focus,
-input[type="tel"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
-textarea:focus,
-select:focus,
-*[contenteditable]:focus {
-  border: 1px solid $primary;
-  outline: 0; }
+  resize:vertical;
+}
+
 label,
 legend {
   display: block;
   margin-bottom: .5rem;
-  font-weight: 700; }
+  font-weight: 700;
+}
+
 fieldset {
   padding: 0;
-  border-width: 0; }
+  border-width: 0;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
-  display: inline; }
+  display: inline;
+}
+
 label > .label-body {
   display: inline-block;
   margin-left: .5rem;
-  font-weight: normal; }
-input[type="email"]:focus.has-error,
-input[type="email"].has-error,
-input[type="number"]:focus.has-error,
-input[type="number"].has-error,
-input[type="search"]:focus.has-error,
-input[type="search"].has-error,
-input[type="text"]:focus.has-error,
-input[type="text"].has-error,
-input[type="tel"]:focus.has-error,
-input[type="tel"].has-error,
-input[type="url"]:focus.has-error,
-input[type="url"].has-error,
-input[type="password"]:focus.has-error,
-input[type="password"].has-error,
-textarea:focus.has-error,
-textarea.has-error,
-select:focus.has-error,
-select.has-error {
-  border: 1px solid $danger; }
-input[type="email"]:focus.has-success,
-input[type="email"].has-success,
-input[type="number"]:focus.has-success,
-input[type="number"].has-success,
-input[type="search"]:focus.has-success,
-input[type="search"].has-success,
-input[type="text"]:focus.has-success,
-input[type="text"].has-success,
-input[type="tel"]:focus.has-success,
-input[type="tel"].has-success,
-input[type="url"]:focus.has-success,
-input[type="url"].has-success,
-input[type="password"]:focus.has-success,
-input[type="password"].has-success,
-textarea:focus.has-success,
-textarea.has-success,
-select:focus.has-success,
-select.has-success {
-  border: 1px solid $success; }
+  font-weight: normal;
+}
