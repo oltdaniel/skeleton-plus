@@ -5,11 +5,11 @@ code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
   font-size: 90%;
-  white-space: nowrap;
   overflow-x: scroll;
   background: lighten($muted ,20%);
   border: 1px solid lighten($muted ,10%);
-  border-radius: 4px; }
+  border-radius: 4px;
+}
 pre > code {
   display: block;
   white-space: pre; }

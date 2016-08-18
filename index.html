@@ -32,6 +32,12 @@
       footer {
         margin-top: 4em;
       }
+
+      @media (max-width: 550px) {
+        body {
+          text-align: justify;
+        }
+      }
     </style>
     <nav class="container">
       <a class="brand">skeleton-plus</a>
@@ -182,8 +188,8 @@
       </section>
       <section id="typographic">
         <h3>Typography</h3>
-        <div class="row offset-by-one column">
-          <div class="six columns">
+        <div class="row">
+          <div class="six columns-md">
             <p>This is a paragraph without a class</p>
             <p class="text-success">This is a paragraph with a success class.</p>
             <p class="text-danger">This is a paragraph with a danger class.</p>
@@ -193,7 +199,7 @@
             <p>A link in a paragraph <a>looks like this</a> and code <code>looks like this.</code></p>
             <p>Underlined and italic text in a paragraph <u>look like this</u> or <i>this</i></p>
           </div>
-          <div class="six columns">
+          <div class="six columns-md">
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
             <h3>Heading 3</h3>
@@ -221,10 +227,10 @@
         <button class="button-success">Success Button</button>
         <p>Normal input fields have been imported from the original Skeleton. Skeleton Plus adds <code>.has-error</code> and <code>.has-success</code> input classes to change the border color.</p>
         <div class="row">
-          <div class="six columns">
+          <div class="six columns-md">
             <input type="text" class="has-error u-full-width" placeholder="Your email ...">
           </div>
-          <div class="six columns">
+          <div class="six columns-md">
             <select class="u-full-width has-success">
               <option value="">Support</option>
               <option value="">Question</option>
@@ -234,10 +240,10 @@
         </div>
         <textarea class="u-full-width" placeholder="Your message ..."></textarea>
         <div class="row">
-          <div class="six columns columns-sm">
+          <div class="six columns">
             <button class="button button-success">Send</button>
           </div>
-          <div class="six columns columns-sm text-center">
+          <div class="six columns text-center">
             <input type="checkbox"> Send me a reply.
           </div>
         </div>
@@ -275,7 +281,7 @@
       </section>
       <section id="lists">
         <h3>Lists</h3>
-        <p>Skeleton Plus includes list attributes that remain unchanged from the original Skeleton's syntax. Classes from Skeleton will work here in Plus.</p>
+        <p>Skeleton Plus includes list attributes that remain unchanged from the original Skeleton's syntax. Classes from Skeleton will work here in Plus. To push the list-style out of the element use <code>.outside</code> at the List Element.</p>
         <div class="row">
           <div class="six columns">
             <ul>

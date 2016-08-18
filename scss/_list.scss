@@ -2,11 +2,19 @@
 List
 */
 ul {
-  list-style: circle outside;
+  list-style: circle inside;
+
+  &.outside {
+    list-style-position: outside;
+  }
 }
 
 ol {
-  list-style: decimal outside;
+  list-style: decimal inside;
+
+  &.outside {
+    list-style-position: outside;
+  }
 }
 
 ol, ul {

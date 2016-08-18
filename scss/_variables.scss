@@ -5,3 +5,6 @@ $muted: #bbb;
 $primary: #1EAEDB;
 $white: #fff;
 $default: $white;
+
+$column-names: 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve';
+$column-width: 100% / length($column-names) - 1%;
