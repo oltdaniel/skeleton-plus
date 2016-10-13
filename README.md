@@ -20,7 +20,7 @@ Skeleton-Plus/
 ├── css/
 │   ├── normalize.min.css
 |   ├── normalize.css
-|   ├── skeleton-plus.min.css
+|   ├── skeleton-plus.css
 │   └── skeleton-plus.min.css
 └── scss/
     ├── _base.scss
