@@ -862,3 +862,51 @@ Media Queries
       color: #fff; }
     .tooltip.warning .content:after {
       border-color: #FFA726 transparent transparent transparent; }
+
+.dropdown-wrap {
+  margin-top: 15px; }
+  .dropdown-wrap ul {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0; }
+    .dropdown-wrap ul a {
+      display: block;
+      color: #8BC34A;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 32px;
+      padding: 0 15px; }
+    .dropdown-wrap ul li {
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0; }
+    .dropdown-wrap ul li.current-menu-item {
+      background: #bbb; }
+    .dropdown-wrap ul li.current-menu-item > a {
+      color: #fff; }
+    .dropdown-wrap ul li:hover {
+      background: #bbb; }
+    .dropdown-wrap ul li:hover > a {
+      color: #fff; }
+    .dropdown-wrap ul li:hover > ul {
+      display: block; }
+    .dropdown-wrap ul ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      padding: 0; }
+      .dropdown-wrap ul ul li {
+        float: none;
+        width: 200px; }
+      .dropdown-wrap ul ul a {
+        line-height: 120%;
+        padding: 10px 15px; }
+      .dropdown-wrap ul ul ul {
+        top: 0;
+        left: 100%; }
