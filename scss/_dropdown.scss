@@ -1,73 +1,97 @@
 .dropdown-wrap {
-  margin-top:15px;
 
-  ul{
-    list-style:none;
-    position:relative;
-    float:left;
-    margin:0;
-    padding:0;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+  }
+
+  li {
+    display: inline-block;
+    float: left;
+    margin-right: 1px;
+    margin-bottom: 0px;
 
     a {
-      display:block;
-      color: $success;
-      text-decoration:none;
-      font-weight:700;
-      font-size:12px;
-      line-height:32px;
-      padding:0 15px;
+      display: block;
+      min-width: 100px;
+      text-align: center;
+      color: $muted;
+      background: $white;
+      text-decoration: none;
     }
 
-    li{
-      position:relative;
-      float:left;
-      margin:0;
-      padding:0;
+    &:hover a {
+      color: $info;
     }
 
-    li.current-menu-item {
-      background: $muted;
-    }
+    &:hover {
+      ul {
+        a {
+          color: $info;
+          height: 40px;
+          line-height: 40px;
+          background: $stable;
 
-    li.current-menu-item > a{
-      color: $white;
-    }
-
-     li:hover {
-      background: $muted;
-    }
-
-    li:hover > a{
-      color: $white;
-    }
-
-    li:hover > ul {
-      display:block
+          &:hover {
+            background: $info;
+            color: $white;
+          }
+        }
+      }
     }
 
     ul {
-      display:none;
-      position:absolute;
-      top:100%;
-      left:0;
-      background: $white;
-      padding:0;
+      display: none;
 
-      li{
-        float:none;
-        width:200px
-      }
+      li {
+        display: block;
+        float: none;
 
-      a{
-        line-height:120%;
-        padding:10px 15px
-      }
-
-      ul{
-        top:0;
-        left:100%
+        a {
+          width: auto;
+          min-width: 100px;
+          padding: 0 20px;
+        }
       }
     }
+  }
 
+  ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+  }
+
+  .show-menu {
+    text-decoration: none;
+    color: $info;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+  }
+
+  input[type=checkbox] {
+    display: none;
+    -webkit-appearance: none;
+  }
+
+  input[type=checkbox]:checked ~ #dropdown-wrap-menu {
+    display: block;
+  }
+
+  @media screen and (max-width: 760px) {
+
+    ul {
+      position: static;
+      display: none;
+    }
+
+    ul li, li a {
+      width: 100%;
+    }
+
+    .show-menu {
+      display: block;
+    }
   }
 }
