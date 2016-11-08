@@ -862,3 +862,145 @@ Media Queries
       color: #fff; }
     .tooltip.warning .content:after {
       border-color: #FFA726 transparent transparent transparent; }
+
+.accordion .transition, .accordion p, .accordion ul li i:before, .accordion ul li i:after {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+
+.accordion .flipIn, .accordion h1, .accordion ul li {
+  -webkit-animation: flipdown 0.5s ease both;
+  animation: flipdown 0.5s ease both; }
+
+.accordion .no-select, .accordion h2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.accordion h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 42px;
+  letter-spacing: 3px;
+  font-weight: 100; }
+
+.accordion h2 {
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  display: block;
+  background-color: #fff;
+  margin: 0;
+  cursor: pointer; }
+
+.accordion p {
+  color: #000;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  z-index: 2;
+  margin: 10px 0px 25px 0px; }
+
+.accordion ul {
+  list-style: none;
+  /*perspective: 900;*/
+  padding: 0;
+  margin: 0; }
+  .accordion ul li {
+    position: relative;
+    margin: 0;
+    border-top: 1px dotted #000; }
+    .accordion ul li i {
+      position: absolute;
+      -webkit-transform: translate(-6px, 0);
+      transform: translate(-6px, 0);
+      margin-top: 16px;
+      right: 0; }
+      .accordion ul li i:before, .accordion ul li i:after {
+        content: "";
+        position: absolute;
+        background-color: #000;
+        width: 3px;
+        height: 9px; }
+      .accordion ul li i:before {
+        -webkit-transform: translate(-2px, 0) rotate(45deg);
+        transform: translate(-2px, 0) rotate(45deg); }
+      .accordion ul li i:after {
+        -webkit-transform: translate(2px, 0) rotate(-45deg);
+        transform: translate(2px, 0) rotate(-45deg); }
+    .accordion ul li input[type=checkbox] {
+      position: absolute;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      opacity: 0; }
+      .accordion ul li input[type=checkbox]:checked ~ p {
+        margin: 0;
+        max-height: 0;
+        opacity: 0;
+        -webkit-transform: translate(0, 50%);
+        transform: translate(0, 50%); }
+      .accordion ul li input[type=checkbox]:checked ~ i:before {
+        -webkit-transform: translate(2px, 0) rotate(45deg);
+        transform: translate(2px, 0) rotate(45deg); }
+      .accordion ul li input[type=checkbox]:checked ~ i:after {
+        -webkit-transform: translate(-2px, 0) rotate(-45deg);
+        transform: translate(-2px, 0) rotate(-45deg); }
+
+@-webkit-keyframes flipdown {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg); }
+  5% {
+    opacity: 1; }
+  80% {
+    -webkit-transform: rotateX(8deg);
+    transform: rotateX(8deg); }
+  83% {
+    -webkit-transform: rotateX(6deg);
+    transform: rotateX(6deg); }
+  92% {
+    -webkit-transform: rotateX(-3deg);
+    transform: rotateX(-3deg); }
+  100% {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg); } }
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg); }
+  5% {
+    opacity: 1; }
+  80% {
+    -webkit-transform: rotateX(8deg);
+    transform: rotateX(8deg); }
+  83% {
+    -webkit-transform: rotateX(6deg);
+    transform: rotateX(6deg); }
+  92% {
+    -webkit-transform: rotateX(-3deg);
+    transform: rotateX(-3deg); }
+  100% {
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: rotateX(0deg);
+    transform: rotateX(0deg); } }
