@@ -23,6 +23,7 @@ Skeleton-Plus/
 |   ├── skeleton-plus.css
 │   └── skeleton-plus.min.css
 └── scss/
+    ├── _accordion.scss
     ├── _base.scss
     ├── _buttons.scss
     ├── _callouts.scss
