@@ -16,23 +16,20 @@ Grid
   float: left;
 }
 
-.columns:first-child {
+*[class*='column']:first-child {
   margin-left: 0;
 }
 
+/* On any screen size */
 @for $i from 1 through length($column-names) {
   $width: ($i * $column-width) + ($i - 1 * 1%);
 
-  .#{nth($column-names, $i)}.columns  {
-    @include column($width);
-  }
-  .#{nth($column-names, $i)}.columns-sm  {
-    @media(max-width: 550px) {
+  @if $i == 1 {
+    .#{nth($column-names, $i)}.column, .#{nth($column-names, $i)}.columns  {
       @include column($width);
     }
-  }
-  .#{nth($column-names, $i)}.columns-md  {
-    @media(min-width: 551px) {
+  } @else {
+    .#{nth($column-names, $i)}.columns  {
       @include column($width);
     }
   }
@@ -42,5 +39,53 @@ Grid
   .offset-by-#{nth($column-names, $i)}.columns {
     margin-left: ($i * $column-width) + ($i * 1%);
     display: inline-block;
+  }
+}
+
+/* Only on mobile devices */
+@media only screen and (min-width: $breakpoint-small) {
+  @for $i from 1 through length($column-names) {
+    $width: ($i * $column-width) + ($i - 1 * 1%);
+
+    @if $i == 1 {
+      .#{nth($column-names, $i)}.column-sm, .#{nth($column-names, $i)}.columns-sm  {
+        @include column($width);
+      }
+    } @else {
+      .#{nth($column-names, $i)}.columns-sm  {
+        @include column($width);
+      }
+    }
+
+    /* Offset */
+
+    .offset-by-#{nth($column-names, $i)}.columns-sm {
+      margin-left: ($i * $column-width) + ($i * 1%);
+      display: inline-block;
+    }
+  }
+}
+
+/* Only on tablets and bigger */
+@media only screen and (min-width: $breakpoint-med) {
+  @for $i from 1 through length($column-names) {
+    $width: ($i * $column-width) + ($i - 1 * 1%);
+
+    @if $i == 1 {
+      .#{nth($column-names, $i)}.column-md, .#{nth($column-names, $i)}.columns-md  {
+        @include column($width);
+      }
+    } @else {
+      .#{nth($column-names, $i)}.columns-md  {
+        @include column($width);
+      }
+    }
+
+    /* Offset */
+
+    .offset-by-#{nth($column-names, $i)}.columns-md {
+      margin-left: ($i * $column-width) + ($i * 1%);
+      display: inline-block;
+    }
   }
 }
