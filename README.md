@@ -7,7 +7,7 @@
 
 Skeleton-Plus is a dead simple, responsive boilerplate to kickstart any responsive web projects.
 
-Check out [http://oltmannsdaniel.github.io/skeleton-plus](http://oltmannsdaniel.github.io/skeleton-plus) for Documentation and Demo
+Check out [skeleton-plus here](https://goo.gl/25fZjC) for Documentation and Demo
 
 # What's in the project?
 
