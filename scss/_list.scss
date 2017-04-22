@@ -4,7 +4,7 @@ List
 ul {
   list-style: circle inside;
 
-  &.outside {
+  &.outside, & > .outside {
     list-style-position: outside;
   }
 }
@@ -12,7 +12,7 @@ ul {
 ol {
   list-style: decimal inside;
 
-  &.outside {
+  &.outside, & > .outside {
     list-style-position: outside;
   }
 }

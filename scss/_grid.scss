@@ -9,31 +9,31 @@ Grid
   padding: 0 20px;
 }
 
+@mixin column($width) {
+  width: $width;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left;
+}
+
 .columns:first-child {
   margin-left: 0;
 }
 
 @for $i from 1 through length($column-names) {
+  $width: ($i * $column-width) + ($i - 1 * 1%);
+
   .#{nth($column-names, $i)}.columns  {
-    width: ($i * $column-width) + ($i - 1 * 1%);
-    display: inline-block;
-    margin-left: 1%;
-    float: left;
+    @include column($width);
   }
   .#{nth($column-names, $i)}.columns-sm  {
     @media(max-width: 550px) {
-      width: ($i * $column-width) + ($i - 1 * 1%);
-      display: inline-block;
-      margin-left: 1%;
-      float: left;
+      @include column($width);
     }
   }
   .#{nth($column-names, $i)}.columns-md  {
     @media(min-width: 551px) {
-      width: ($i * $column-width) + ($i - 1 * 1%);
-      display: inline-block;
-      margin-left: 1%;
-      float: left;
+      @include column($width);
     }
   }
 

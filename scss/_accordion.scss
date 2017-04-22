@@ -18,17 +18,16 @@
     user-select: none;
   }
 
-  h1{
+  h1 {
     text-transform: uppercase;
     font-size: 30px;
     line-height: 42px;
     letter-spacing: 3px;
-    font-weight: 100;
     @extend .flipIn;
   }
 
 
-  h2{
+  h2 {
     font-size: 20px;
     line-height: 34px;
     letter-spacing: 1px;
@@ -39,11 +38,10 @@
     @extend .no-select;
   }
 
-  p{
+  p {
     color: $black;
     font-size: 17px;
     line-height: 26px;
-    font-weight: 300;
     letter-spacing: 1px;
     position: relative;
     overflow: hidden;
@@ -55,19 +53,19 @@
     margin: 10px 0px 25px 0px;
   }
 
-  ul{
+  ul {
     list-style: none;
-    /*perspective: 900;*/
     padding: 0;
     margin: 0;
-    li{
+
+    li {
       position: relative;
       margin: 0;
-      border-top: 1px dotted $black;
+      border-top: 1px solid #ddd;
       @extend .flipIn;
 
 
-      i{
+      i {
         position: absolute;
         transform: translate(-6px, 0);
         margin-top: 16px;
@@ -82,17 +80,17 @@
           height: 9px;
         }
 
-        &:before{
+        &:before {
           transform: translate(-2px, 0) rotate(45deg);
         }
 
-        &:after{
+        &:after {
           transform: translate(2px, 0) rotate(-45deg);
         }
 
       }
 
-      input[type=checkbox]{
+      input[type=checkbox] {
         position: absolute;
         cursor: pointer;
         width: 100%;
@@ -100,19 +98,20 @@
         z-index: 1;
         opacity: 0;
 
-        &:checked{
+        &:checked {
           & ~ p {
             margin: 0;
             max-height: 0;
             opacity: 0;
             transform: translate(0, 50%)
           }
-          & ~ i{
-            &:before{
+
+          & ~ i {
+            &:before {
               transform: translate(2px, 0) rotate(45deg)
             }
 
-            &:after{
+            &:after {
               transform: translate(-2px, 0) rotate(-45deg)
             }
           }
@@ -123,33 +122,32 @@
   }
 
 
-  @keyframes flipdown{
-    0%{
+  @keyframes flipdown {
+    0% {
       opacity: 0;
       transform-origin: top center;
       transform: rotateX(-90deg);
     }
 
-    5%{
+    5% {
       opacity: 1;
     }
 
-    80%{
+    80% {
       transform: rotateX(8deg);
     }
 
-    83%{
+    83% {
       transform: rotateX(6deg);
     }
 
-    92%{
+    92% {
       transform: rotateX(-3deg);
     }
 
-    100%{
+    100% {
       transform-origin: top center;
       transform: rotateX(0deg);
     }
   }
-
 }
