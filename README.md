@@ -1,6 +1,6 @@
-#[Skeleton-Plus](http://oltmannsdaniel.github.io/skeleton-plus)
+# [Skeleton-Plus](http://oltmannsdaniel.github.io/skeleton-plus)
 
-[![GitHub issues](https://img.shields.io/github/issues/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/issues)   [![GitHub stars](https://img.shields.io/github/stars/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/stargazers)   [![GitHub forks](https://img.shields.io/github/forks/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/network)
+[![GitHub issues](https://img.shields.io/github/issues/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/issues)   [![GitHub stars](https://img.shields.io/github/stars/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/stargazers)   [![GitHub forks](https://img.shields.io/github/forks/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/network)  [![npm](https://img.shields.io/npm/dt/skeleton-plus.svg)]()
 
 Skeleton-Plus is a dead simple, responsive boilerplate to kickstart any responsive web projects.
 
@@ -65,7 +65,7 @@ Skeleton-Plus supports all the browsers including the older versions of the list
 
 # Getting Started
 
-####HTML
+#### HTML
 
 You can simply add the line inside the `<head>` tag. No need of downloading, no need of compiling. Just plug and play
 
@@ -73,7 +73,7 @@ You can simply add the line inside the `<head>` tag. No need of downloading, no 
 <link rel="stylesheet" href="https://cdn.rawgit.com/oltmannsdaniel/skeleton-plus/master/css/skeleton-plus.min.css" type="text/css" />
 ```
 
-####NPM
+#### NPM
 
 You can install the project via Node.js NPM manager
 
@@ -89,7 +89,7 @@ While, with ***Express.js*** you could use the following code:
 
 ---
 
-#Development
+# Development
 
 First, install all the dependencies : 
 
@@ -105,18 +105,18 @@ $ gulp sass:watch
 
 ---
 
-#Credits
+# Credits
 
 A project by ***Daniel Oltmanns*** and [Others](https://github.com/oltmannsdaniel/skeleton-plus/graphs/contributors) for an awesome and better web.
 
 ---
 
-#Thanks
+# Thanks
 
 * Thanks to [Ryan Grove](https://github.com/rgrove) for an awesome CDN
 * Thanks to [Łukasz Dziedzic](https://fonts.google.com/specimen/Lato) for Lato FontFace
 
 ---
 
-#License
+# License
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/oltmannsdaniel/skeleton-plus/master/LICENSE)
