@@ -1,19 +1,20 @@
 # [Skeleton-Plus](http://oltmannsdaniel.github.io/skeleton-plus)
 
-[![GitHub issues](https://img.shields.io/github/issues/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/issues)   [![GitHub stars](https://img.shields.io/github/stars/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/stargazers)   [![GitHub forks](https://img.shields.io/github/forks/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/network)  [![npm](https://img.shields.io/npm/dt/skeleton-plus.svg)]()
+[![GitHub issues](https://img.shields.io/github/issues/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/issues)
+[![GitHub stars](https://img.shields.io/github/stars/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/network)
+[![npm](https://img.shields.io/npm/dt/skeleton-plus.svg)]()
 
 Skeleton-Plus is a dead simple, responsive boilerplate to kickstart any responsive web projects.
 
 Check out [http://oltmannsdaniel.github.io/skeleton-plus](http://oltmannsdaniel.github.io/skeleton-plus) for Documentation and Demo
-
----
 
 # What's in the project?
 
 The project contains a compiled `skeleton.min.css` for using it directly and scss files for those who would like to edit the files.
 
 ```
-Skeleton-Plus/
+skeleton-plus/
 ├── index.html
 ├── package.json
 ├── gulpfile.js
@@ -78,13 +79,13 @@ You can simply add the line inside the `<head>` tag. No need of downloading, no 
 You can install the project via Node.js NPM manager
 
 ```node
-$npm install skeleton-plus --save
+$ npm install skeleton-plus --save
 ```
 
 While, with ***Express.js*** you could use the following code:
 
 ```node
-  app.use('/skeleton-plus', express.static(__dirname + '/node_modules/skeleton-plus/css/'))
+app.use('/skeleton-plus', express.static(__dirname + '/node_modules/skeleton-plus/css/'))
 ```
 
 ---
@@ -107,7 +108,7 @@ $ gulp sass:watch
 
 # Credits
 
-A project by ***Daniel Oltmanns*** and [Others](https://github.com/oltmannsdaniel/skeleton-plus/graphs/contributors) for an awesome and better web.
+A project by **[Daniel Oltmanns](https://github.com/oltmannsdaniel)** and [Others](https://github.com/oltmannsdaniel/skeleton-plus/graphs/contributors) for an awesome and better web.
 
 ---
 
