@@ -66,12 +66,12 @@ Skeleton-Plus supports all the browsers including the older versions of the list
 
 # Getting Started
 
-#### HTML
-
-You can simply add the line inside the `<head>` tag. No need of downloading, no need of compiling. Just plug and play
+#### Skeleton-Plus CDN
+The folks over [JSDelivr](http://www.jsdelivr.com) graciously provide CDN support for Skeleton-Plus's CSS. Just use these links.
 
 ```html
-<link rel="stylesheet" href="https://cdn.rawgit.com/oltmannsdaniel/skeleton-plus/master/css/skeleton-plus.min.css" type="text/css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/skeleton-plus/2.0.0/skeleton.plus.min.css" integrity="sha256-uo/YQ2vRuo0ACHjXZndH5BqRcJOIhb1p5crPj/zooeQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/skeleton-plus/2.0.0/normalize.min.css" integrity="sha256-6jW9iLDMivxH3VEKBlGUfPcPOJIqGAA5hv06d4BxNmU=" crossorigin="anonymous">
 ```
 
 #### NPM
@@ -86,6 +86,34 @@ While, with ***Express.js*** you could use the following code:
 
 ```node
 app.use('/skeleton-plus', express.static(__dirname + '/node_modules/skeleton-plus/css/'))
+```
+
+### Basic `HTML` template
+Start with this basic `HTML` template and modify it to suite your needs. You can either link the CSS files using the [provided CDN](#skeleton-plus-cdn) or your own custom build.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Skeleton-Plus 101 Template</title>
+
+    <!-- Skeleton-Plus -->
+    <link href="path/to/skeleton-plus/css/skeleton-plus.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/g/html5shiv@3.7.3,respond@1.4.2"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+  </body>
+</html>
 ```
 
 ---
@@ -114,7 +142,7 @@ A project by **[Daniel Oltmanns](https://github.com/oltmannsdaniel)** and [Other
 
 # Thanks
 
-* Thanks to [Ryan Grove](https://github.com/rgrove) for an awesome CDN
+* Thanks to [JSDelivr](http://www.jsdelivr.com) for an awesome CDN.
 * Thanks to [Łukasz Dziedzic](https://fonts.google.com/specimen/Lato) for Lato FontFace
 
 ---
