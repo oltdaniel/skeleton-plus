@@ -9,11 +9,17 @@
     - [ ] Pagination
     - [ ] Progress bars
     - [ ] Element groups
+    - [ ] Cards
+    - [ ] Input Groups
+    - [ ] Lists Groups
+    - [ ] Labels
+    - [ ] Button Groups
+    - [ ] Navs (Tabs/Pills)
 - [ ] Rename some classes
 - [ ] Finally roll out a complete new Version of Skeleton (Cause if the huge changes,  I think we need to move from v2 to v3)
 
 ## Optional
-
+- [ ] Optional Flexbox-grid
 
 ## Notes
 
