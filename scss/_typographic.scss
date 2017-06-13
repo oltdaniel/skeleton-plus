@@ -1,9 +1,6 @@
 /*
 Typographic
 */
-$heading-start: 4.2rem;
-$heading-step: 0.4rem;
-
 @for $i from 1 through 6 {
   h#{$i}, h#{$i} * {
     font-size: $heading-start - ($i * $heading-step);

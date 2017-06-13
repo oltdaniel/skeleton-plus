@@ -363,6 +363,38 @@ td,
 th {
   padding: 0; }
 
+/**
+ * Colors
+ */
+/**
+ * Typographic
+ */
+/**
+ * Grid settings
+ */
+/**
+ * Device breakpoints
+ */
+/*
+=============
+Media Queries
+=============
+- Larger than mobile
+@media (min-width: 400px) {}
+
+- Larger than phablet (also point when grid becomes active)
+@media (min-width: 550px) {}
+
+- Larger than tablet
+@media (min-width: 750px) {}
+
+- Larger than desktop
+@media (min-width: 1000px) {}
+
+- Larger than Desktop HD
+@media (min-width: 1200px) {}
+
+*/
 /*
 Base
 */
@@ -1173,14 +1205,6 @@ Clearing
   display: table;
   clear: both; }
 
-/*
-Media Queries
-*/
-/* Larger than mobile */
-/* Larger than phablet (also point when grid becomes active) */
-/* Larger than tablet */
-/* Larger than desktop */
-/* Larger than Desktop HD */
 .callout {
   position: relative;
   padding: 15px;

@@ -1,3 +1,6 @@
+/**
+ * Colors
+ */
 $success: #8BC34A;
 $danger: #F44336;
 $warning: #FFA726;
@@ -7,7 +10,47 @@ $white: #fff;
 $black: #000;
 $default: $white;
 
+/**
+ * Typographic
+ */
+$heading-start: 4.2rem;
+$heading-step: 0.4rem;
+
+/**
+ * Grid settings
+ */
 $column-names: 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve';
 $column-width: 100% / length($column-names) - 1%;
 $breakpoint-small: 33.75em; // 540px
 $breakpoint-med: 45em; // 720px
+
+
+/**
+ * Device breakpoints
+ */
+$breakpoint-mobile: 400px;
+$breakpoint-phablet: 550px;
+$breakpoint-tablet: 750px;
+$breakpoint-desktop: 1000px;
+$breakpoint-tv: 1200px;
+
+/*
+=============
+Media Queries
+=============
+- Larger than mobile
+@media (min-width: 400px) {}
+
+- Larger than phablet (also point when grid becomes active)
+@media (min-width: 550px) {}
+
+- Larger than tablet
+@media (min-width: 750px) {}
+
+- Larger than desktop
+@media (min-width: 1000px) {}
+
+- Larger than Desktop HD
+@media (min-width: 1200px) {}
+
+*/
