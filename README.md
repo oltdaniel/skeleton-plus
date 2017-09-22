@@ -1,13 +1,13 @@
-# [Skeleton-Plus](http://oltmannsdaniel.github.io/skeleton-plus)
+# [Skeleton-Plus](https://goo.gl/c6WDjY)
 
-[![GitHub issues](https://img.shields.io/github/issues/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/issues)
-[![GitHub stars](https://img.shields.io/github/stars/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/oltmannsdaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/network)
+[![GitHub issues](https://img.shields.io/github/issues/oldaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/issues)
+[![GitHub stars](https://img.shields.io/github/stars/oldaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/oldaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/network)
 [![npm](https://img.shields.io/npm/dt/skeleton-plus.svg)]()
 
 Skeleton-Plus is a dead simple, responsive boilerplate to kickstart any responsive web projects.
 
-Check out [skeleton-plus here](https://goo.gl/25fZjC) for Documentation and Demo
+Check out [skeleton-plus here](https://goo.gl/c6WDjY) for Documentation and Demo
 
 # What's in the project?
 
@@ -71,7 +71,7 @@ Skeleton-Plus supports all the browsers including the older versions of the list
 You can simply add the line inside the `<head>` tag. No need of downloading, no need of compiling. Just plug and play
 
 ```html
-<link rel="stylesheet" href="https://cdn.rawgit.com/oltmannsdaniel/skeleton-plus/master/css/skeleton-plus.min.css" type="text/css" />
+<link rel="stylesheet" href="https://cdn.rawgit.com/oldaniel/skeleton-plus/master/css/skeleton-plus.min.css" type="text/css" />
 ```
 
 #### NPM
@@ -108,7 +108,7 @@ $ gulp sass:watch
 
 # Credits
 
-A project by **[Daniel Oltmanns](https://github.com/oltmannsdaniel)** and [Others](https://github.com/oltmannsdaniel/skeleton-plus/graphs/contributors) for an awesome and better web.
+A project by **[Daniel Oltmanns](https://github.com/oldaniel)** and [Others](https://github.com/oldaniel/skeleton-plus/graphs/contributors) for an awesome and better web.
 
 ---
 
