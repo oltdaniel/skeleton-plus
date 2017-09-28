@@ -28,12 +28,31 @@ nav {
   nav * {
     display: inline-block; }
 
+button {
+  display: inline-block;
+  padding: 8px 30px;
+  margin: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background-color: #212121;
+  color: #ffffff;
+  cursor: pointer; }
+  button:hover, button:disabled {
+    background-color: #878787; }
+  button:active {
+    background-color: black; }
+
 b, strong {
   font-weight: 700; }
 
 a {
   text-decoration: underline;
   cursor: pointer; }
+  a:hover {
+    color: #878787; }
 
 h1 {
   font-size: 3rem; }

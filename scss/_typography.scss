@@ -3,6 +3,11 @@ b, strong { font-weight: 700; }
 a {
   text-decoration: underline;
   cursor: pointer;
+
+  // Actions
+  &:hover {
+    color: lighten($textColor, 40%);
+  }
 }
 
 h1 { font-size: 3rem; }

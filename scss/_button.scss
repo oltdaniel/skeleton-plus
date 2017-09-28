@@ -1,1 +1,29 @@
-button {}
+button {
+  display: inline-block;
+
+  padding: 8px 30px;
+  margin: 5px 0;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  border: none;
+  outline: none;
+
+  border-radius: 4px;
+
+  background-color: $textColor;
+  color: $textInvertColor;
+
+  cursor: pointer;
+
+  // Actions
+  &:hover, &:disabled {
+    background-color: lighten($textColor, 40%);
+  }
+
+  &:active {
+    background-color: darken($textColor, 40%);
+  }
+
+}
