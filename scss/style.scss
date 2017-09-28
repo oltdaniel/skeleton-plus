@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
 
+/*
+ Define some variables we will need
+*/
+$textColor: #212121;
+$mutedColor: #dddddd;
+
+/*
+ Do the imports
+*/
 @import 'base';
 
 @import 'navigation';

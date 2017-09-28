@@ -1,3 +1,24 @@
-nav {}
+nav {
+  margin: 20px auto;
+  max-width: 960px;
+  width: 95%;
+
+  label {
+    font-weight: bold;
+  }
+
+  ul {
+    list-style: none;
+    float: right;
+
+    li {
+      margin: 0 15px;
+    }
+  }
+
+  * {
+    display: inline-block;
+  }
+}
 
 footer {}
