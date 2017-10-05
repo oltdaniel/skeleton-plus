@@ -1,0 +1,17 @@
+input {
+  display: block;
+  width: 100%;
+
+  padding: 5px;
+  margin: 5px 0;
+
+  border: 1px solid $mutedColor;
+  outline: none;
+
+  border-radius: 2px;
+
+  // Actions
+  &:hover, &:focus {
+    border-color: $textColor;
+  }
+}

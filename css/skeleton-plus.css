@@ -45,6 +45,17 @@ button {
   button:active {
     background-color: black; }
 
+input {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #dddddd;
+  outline: none;
+  border-radius: 2px; }
+  input:hover, input:focus {
+    border-color: #212121; }
+
 b, strong {
   font-weight: 700; }
 
