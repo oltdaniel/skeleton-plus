@@ -36,6 +36,50 @@ nav {
         float: none;
         margin-top: 15px; } }
 
+.grid-flex {
+  display: -webkit-box;
+  display: flex; }
+
+.flex-1 {
+  -webkit-box-flex: 1;
+  flex: 1; }
+
+.flex-2 {
+  -webkit-box-flex: 2;
+  flex: 2; }
+
+.flex-3 {
+  -webkit-box-flex: 3;
+  flex: 3; }
+
+.flex-4 {
+  -webkit-box-flex: 4;
+  flex: 4; }
+
+.flex-5 {
+  -webkit-box-flex: 5;
+  flex: 5; }
+
+.flex-6 {
+  -webkit-box-flex: 6;
+  flex: 6; }
+
+.flex-7 {
+  -webkit-box-flex: 7;
+  flex: 7; }
+
+.flex-8 {
+  -webkit-box-flex: 8;
+  flex: 8; }
+
+.flex-9 {
+  -webkit-box-flex: 9;
+  flex: 9; }
+
+.flex-10 {
+  -webkit-box-flex: 10;
+  flex: 10; }
+
 button {
   display: inline-block;
   padding: 8px 30px;

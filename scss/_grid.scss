@@ -1,1 +1,11 @@
 .grid {}
+
+.grid-flex {
+  display: flex;
+}
+
+@for $i from 1 through 10 {
+  .flex-#{$i} {
+    flex: $i;
+  }
+}
