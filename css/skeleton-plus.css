@@ -27,6 +27,14 @@ nav {
       margin: 0 15px; }
   nav * {
     display: inline-block; }
+  @media screen and (max-width: 640px) {
+    nav {
+      text-align: center; }
+      nav > * {
+        display: block; }
+      nav ul {
+        float: none;
+        margin-top: 15px; } }
 
 button {
   display: inline-block;
@@ -105,3 +113,12 @@ hr {
   height: 1px;
   width: 60%;
   background-color: #dddddd; }
+
+.bg-success {
+  background-color: #00ff7a; }
+
+.bg-warning {
+  background-color: #ffce65; }
+
+.bg-error {
+  background-color: #ff3d3d; }

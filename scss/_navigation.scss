@@ -19,6 +19,19 @@ nav {
   * {
     display: inline-block;
   }
+
+  @media screen and (max-width: 640px) {
+    text-align: center;
+
+    & > * {
+      display: block;
+    }
+
+    ul {
+      float: none;
+      margin-top: 15px;
+    }
+  }
 }
 
 footer {}

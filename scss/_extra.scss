@@ -10,3 +10,7 @@ hr {
   width: 60%;
   background-color: $mutedColor;
 }
+
+.bg-success { background-color: $successColor; }
+.bg-warning { background-color: $warningColor; }
+.bg-error { background-color: $errorColor; }
