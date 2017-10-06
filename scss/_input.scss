@@ -1,4 +1,4 @@
-input {
+input, textarea, select {
   display: block;
   width: 100%;
 
@@ -9,9 +9,19 @@ input {
   outline: none;
 
   border-radius: 2px;
+  background-color: #ffffff;
 
   // Actions
-  &:hover, &:focus {
+  &:hover {
+    border-color: lighten($textColor, $ligthenIntesity);
+  }
+
+  &:focus {
     border-color: $textColor;
   }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 60px;
 }

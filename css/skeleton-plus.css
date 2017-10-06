@@ -97,16 +97,23 @@ button {
   button:active {
     background-color: black; }
 
-input {
+input, textarea, select {
   display: block;
   width: 100%;
   padding: 5px;
   margin: 5px 0;
   border: 1px solid #dddddd;
   outline: none;
-  border-radius: 2px; }
-  input:hover, input:focus {
+  border-radius: 2px;
+  background-color: #ffffff; }
+  input:hover, textarea:hover, select:hover {
+    border-color: #878787; }
+  input:focus, textarea:focus, select:focus {
     border-color: #212121; }
+
+textarea {
+  resize: vertical;
+  min-height: 60px; }
 
 b, strong {
   font-weight: 700; }
@@ -142,6 +149,9 @@ h1, h2, h3, h4, h5, h6 {
 small {
   font-size: .8rem; }
 
+p {
+  margin: 15px 0; }
+
 .text-left {
   text-align: left; }
 
@@ -166,3 +176,24 @@ hr {
 
 .bg-error {
   background-color: #ff3d3d; }
+
+.text-inverted, .text-inverted * {
+  color: #ffffff; }
+
+code {
+  background-color: #dddddd;
+  display: inline-block;
+  padding: 2px 5px; }
+
+.cover {
+  min-height: 60vh;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center; }
+
+.cover > div {
+  -webkit-box-flex: 1;
+  flex: 1; }

@@ -6,7 +6,7 @@ a {
 
   // Actions
   &:hover {
-    color: lighten($textColor, 40%);
+    color: lighten($textColor, $ligthenIntesity);
   }
 }
 
@@ -24,6 +24,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 small { font-size: .8rem; }
+
+p { margin: 15px 0; }
 
 .text-left { text-align: left; }
 .text-center { text-align: center; }

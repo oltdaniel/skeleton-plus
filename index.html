@@ -36,15 +36,25 @@
       <nav>
         <label>skeleton-plus</label>
         <ul>
-          <li><a href="#">Preview</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Creator</a></li>
+          <li><a href="#preview">Preview</a></li>
+          <li><a href="https://github.com/oldaniel/skeleton-plus" target="_blank">GitHub</a></li>
+          <li><a href="https://github.com/oldaniel" target="_blank">Creator</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section>
+      <div class="cover">
+        <div>
+          <h3>Welcome to `skeleton-plus`</h3>
+          <p>
+            A fresh looking but still simple css framework.
+          </p>
+          <hr><br>
+          <a href="#preview">Learn more</a>
+        </div>
+      </div>
+      <section id="preview">
         <h2>Typography</h2>
         <hr>
         <br>
@@ -87,7 +97,11 @@
         <hr>
         <br>
 
-        <input type="text" name="text" placeholder="Input" required>
+        <input type="text" name="text" placeholder="Input" required><br>
+        <textarea name="textarea" placeholder="Textarea"></textarea><br>
+        <select name="select">
+          <option value="test">Test</option>
+        </select>
       </section>
 
       <section>
@@ -98,10 +112,10 @@
         <div class="color-preview bg-success text-center">
           SUCCESS
         </div>
-        <div class="color-preview bg-error text-center">
+        <div class="color-preview bg-error text-center text-inverted">
           ERROR
         </div>
-        <div class="color-preview bg-warning text-center">
+        <div class="color-preview bg-warning text-center text-inverted">
           WARNING
         </div>
       </section>
@@ -112,6 +126,10 @@
         <br>
 
         <h4>Flex</h4>
+        <p>
+          Length of an element equals <code>[element number]/[total]</code>
+        </p>
+
         <div class="grid-flex">
           <div class="flex-1 block">
             1/2

@@ -14,3 +14,22 @@ hr {
 .bg-success { background-color: $successColor; }
 .bg-warning { background-color: $warningColor; }
 .bg-error { background-color: $errorColor; }
+
+.text-inverted, .text-inverted * { color: $textInvertColor; }
+
+code {
+  background-color: $mutedColor;
+  display: inline-block;
+  padding: 2px 5px;
+}
+
+.cover {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover > div {
+  flex: 1;
+}
