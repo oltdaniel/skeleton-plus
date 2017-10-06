@@ -1,26 +1,23 @@
-# Ideas for Version 3.0
+# Ideas for v3
 
-## Needed
-- [ ] New Tooltips
-- [ ] Color Updates
-- [ ]  A new font (Roboto/Rubik/Roboto Mono/..)
-- [ ] Some minor fixes
-- [ ] New Components
-    - [ ] Pagination
-    - [ ] Progress bars
-    - [ ] Element groups
-    - [ ] Cards
-    - [ ] Input Groups
-    - [ ] Lists Groups
-    - [ ] Labels
-    - [ ] Button Groups
-    - [ ] Navs (Tabs/Pills)
-- [ ] Rename some classes
-- [ ] Finally roll out a complete new Version of Skeleton (Cause if the huge changes,  I think we need to move from v2 to v3)
+This is where all the ideas for the new version `v3` live.
 
-## Optional
-- [ ] Optional Flexbox-grid
+## New things
 
-## Notes
+- [ ] Implement and update all old classes
+- [X] Move to a new font
+- [X] Use new more light colors
+- [X] Implement a flex grid
+- [ ] New Components:
+  - [ ] Button/List/Input groups
+  - [ ] Progressbars
+  - [ ] Pagination
+  - [ ] Cards
+  - [ ] Navigations
+    - [X] Basic
+    - [ ] Slide in
+  - [ ] Image class helpers
 
-- Classes that need renaming:
+## Optional things
+
+- [ ] _Shadow helpers_: Add material shadows by class
