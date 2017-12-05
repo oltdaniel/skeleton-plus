@@ -36,6 +36,16 @@ nav {
         float: none;
         margin-top: 15px; } }
 
+.container {
+  max-width: 960px;
+  width: 95%;
+  margin: 0 auto; }
+
+.grid {
+  clear: both;
+  display: block;
+  width: 100%; }
+
 .grid-flex {
   display: -webkit-box;
   display: flex; }
@@ -89,13 +99,31 @@ button {
   border: none;
   outline: none;
   border-radius: 2px;
-  background-color: #212121;
   color: #ffffff;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #212121; }
   button:hover, button:disabled {
     background-color: #878787; }
   button:active {
     background-color: black; }
+  button.success {
+    background-color: #2ecc71; }
+    button.success:hover, button.success:disabled {
+      background-color: #69dd9a; }
+    button.success:active {
+      background-color: #208e4e; }
+  button.error {
+    background-color: #e74c3c; }
+    button.error:hover, button.error:disabled {
+      background-color: #ef8b80; }
+    button.error:active {
+      background-color: #bf2718; }
+  button.warning {
+    background-color: #f39c12; }
+    button.warning:hover, button.warning:disabled {
+      background-color: #f7ba5b; }
+    button.warning:active {
+      background-color: #b06f09; }
 
 input, textarea, select {
   display: block;
@@ -161,6 +189,15 @@ p {
 .text-right {
   text-align: right; }
 
+ul ul {
+  margin-left: 15px; }
+
+ul.inner, ul .inner {
+  list-style-position: inside; }
+
+ul.outer, ul .outer {
+  list-style-position: outside; }
+
 hr {
   border: none;
   outline: none;
@@ -169,13 +206,13 @@ hr {
   background-color: #dddddd; }
 
 .bg-success {
-  background-color: #00ff7a; }
+  background-color: #2ecc71; }
 
 .bg-warning {
-  background-color: #ffce65; }
+  background-color: #f39c12; }
 
 .bg-error {
-  background-color: #ff3d3d; }
+  background-color: #e74c3c; }
 
 .text-inverted, .text-inverted * {
   color: #ffffff; }

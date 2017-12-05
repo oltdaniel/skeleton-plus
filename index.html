@@ -13,12 +13,6 @@
         margin: 50px 0;
       }
 
-      main {
-        max-width: 960px;
-        margin: 0 auto;
-        width: 95%;
-      }
-
       .color-preview {
         padding: 15px;
       }
@@ -43,7 +37,7 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <div class="cover">
         <div>
           <h3>Welcome to `skeleton-plus`</h3>
@@ -90,6 +84,10 @@
 
         <button>Button</button>
         <button disabled>Button Disabled</button>
+
+        <button class="success">Button Success</button>
+        <button class="error">Button Error</button>
+        <button class="warning">Button Warning</button>
       </section>
 
       <section>
@@ -109,7 +107,7 @@
         <hr>
         <br>
 
-        <div class="color-preview bg-success text-center">
+        <div class="color-preview bg-success text-center text-inverted">
           SUCCESS
         </div>
         <div class="color-preview bg-error text-center text-inverted">
@@ -147,6 +145,60 @@
             1/1
           </div>
         </div>
+      </section>
+
+      <section>
+        <h2>Lists</h2>
+        <hr>
+        <br>
+
+        <h4>Standard list</h4>
+        <ul>
+          <li>
+            This is a pretty long text that needs to be splitted into two lines on the most devices, so we can see how the text behaves on multiple lines in a simple list.
+          </li>
+          <li>
+            This is a pretty long text that needs to be splitted into two lines on the most devices, so we can see how the text behaves on multiple lines in a simple list.
+          </li>
+          <li>
+            This is a pretty long text that needs to be splitted into two lines on the most devices, so we can see how the text behaves on multiple lines in a simple list.
+
+            <ul>
+              <li>
+                This is a pretty long text that needs to be splitted into two lines on the most devices, so we can see how the text behaves on multiple lines in a simple list.
+              </li>
+              <li class="inner">
+                <b>Inner position</b> This is a pretty long text that needs to be splitted into two lines on the most devices, so we can see how the text behaves on multiple lines in a simple list.
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <br>
+
+
+        <h4>Inner list</h4>
+
+        <ul class="inner">
+          <li>
+            This is a pretty long text that needs to be splitted into two lines on the most devices, so we can see how the text behaves on multiple lines in a simple list.
+          </li>
+          <li>
+            This is a pretty long text that needs to be splitted into two lines on the most devices, so we can see how the text behaves on multiple lines in a simple list.
+          </li>
+          <li>
+            This is a pretty long text that needs to be splitted into two lines on the most devices, so we can see how the text behaves on multiple lines in a simple list.
+
+            <ul>
+              <li>
+                This is a pretty long text that needs to be splitted into two lines on the most devices, so we can see how the text behaves on multiple lines in a simple list.
+              </li>
+              <li class="outer">
+                <b>Outer position</b> This is a pretty long text that needs to be splitted into two lines on the most devices, so we can see how the text behaves on multiple lines in a simple list.
+              </li>
+            </ul>
+          </li>
+        </ul>
       </section>
     </main>
 

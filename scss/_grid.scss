@@ -1,4 +1,14 @@
-.grid {}
+.container {
+	max-width: 960px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.grid {
+	clear: both;
+	display: block;
+	width: 100%;
+}
 
 .grid-flex {
   display: flex;

@@ -7,9 +7,9 @@ $textColor: #212121;
 $textInvertColor: #ffffff;
 
 $mutedColor: #dddddd;
-$successColor: #00ff7a;
-$errorColor: #ff3d3d;
-$warningColor: #ffce65;
+$successColor: #2ecc71;
+$errorColor: #e74c3c;
+$warningColor: #f39c12;
 
 $ligthenIntesity: 40%;
 
@@ -31,5 +31,7 @@ $font: 'Lato', sans-serif;
 @import 'typography';
 
 @import 'table';
+
+@import 'lists';
 
 @import 'extra';

@@ -1,3 +1,16 @@
+@mixin button_color($color, $change) {
+  background-color: $color;
+
+  // Actions
+  &:hover, &:disabled {
+    background-color: lighten($color, $change);
+  }
+
+  &:active {
+    background-color: darken($color, $change);
+  }
+}
+
 button {
   display: inline-block;
 
@@ -12,18 +25,22 @@ button {
 
   border-radius: 2px;
 
-  background-color: $textColor;
   color: $textInvertColor;
 
   cursor: pointer;
 
-  // Actions
-  &:hover, &:disabled {
-    background-color: lighten($textColor, 40%);
+  // Colors
+  @include button_color($textColor, 40%);
+
+  &.success {
+    @include button_color($successColor, 15%);
   }
 
-  &:active {
-    background-color: darken($textColor, 40%);
+  &.error {
+    @include button_color($errorColor, 15%);
   }
 
+  &.warning {
+    @include button_color($warningColor, 15%);
+  }
 }

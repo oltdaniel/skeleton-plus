@@ -1,0 +1,13 @@
+ul {
+	ul {
+		margin-left: 15px;
+	}
+
+	&.inner, .inner {
+		list-style-position: inside;
+	}
+
+	&.outer, .outer {
+		list-style-position: outside;
+	}
+}
