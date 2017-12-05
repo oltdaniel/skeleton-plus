@@ -33,7 +33,43 @@ Add `<link rel="stylesheet" href="css/skeleton-plus.min.css">` to your `<head>`.
 
 ### Change it
 
-CLone and mix up things. If you think your edits are interesting for the public, just open a new pull request on that.
+Clone and mix up things. If you think your edits are interesting for the public, just open a new pull request on that.
+
+Here a brief overview of our folder structure:
+
+```
+skeleton-plus
+├── css # Our destination folder
+│   ├── skeleton-plus.css
+│   └── skeleton-plus.min.css
+├── scss # Our source folder
+│   ├── _base.scss
+│   ├── _button.scss
+│   ├── _extra.scss
+│   ├── _grid.scss
+│   ├── _input.scss
+│   ├── _navigation.scss
+│   ├── _table.scss
+│   ├── _typography.scss
+│   └── style.scss
+├── LICENSE
+├── README.md
+├── gulpfile.js
+├── index.html
+└── package.json
+```
+
+Some `gulp` task you should know about:
+
+- `scss` compiles the scss to css
+- `scss:min` compress the compiled css files
+- `watch` executes `scss` and `scss:min` on any file change
+
+**Required tools for development:**
+
+- Node.js
+- NPM
+- Gulp installed globally (`npm install gulp -g`)
 
 ## Credits & License
 
