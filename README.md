@@ -5,6 +5,8 @@
 [![GitHub forks](https://img.shields.io/github/forks/oldaniel/skeleton-plus.svg)](https://github.com/oltmannsdaniel/skeleton-plus/network)
 [![npm](https://img.shields.io/npm/dt/skeleton-plus.svg)]()
 
+## `v3` is currently in development and will have huge changes. Check it out [here](https://github.com/oldaniel/skeleton-plus/tree/v3)
+
 Skeleton-Plus is a dead simple, responsive boilerplate to kickstart any responsive web projects.
 
 Check out [skeleton-plus here](https://goo.gl/c6WDjY) for Documentation and Demo
