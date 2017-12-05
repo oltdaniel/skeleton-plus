@@ -15,6 +15,11 @@ $ligthenIntesity: 40%;
 
 $font: 'Lato', sans-serif;
 
+$columnNames: 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve';
+$columnWidth: 100% / length($columnNames) - 1%;
+
+$mobileBreak: 750px;
+
 /*
  Do the imports
 */

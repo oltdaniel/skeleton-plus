@@ -41,14 +41,14 @@ nav {
   width: 95%;
   margin: 0 auto; }
 
-.grid {
-  clear: both;
-  display: block;
-  width: 100%; }
-
 .grid-flex {
   display: -webkit-box;
   display: flex; }
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both; }
 
 .flex-1 {
   -webkit-box-flex: 1;
@@ -89,6 +89,175 @@ nav {
 .flex-10 {
   -webkit-box-flex: 10;
   flex: 10; }
+
+/* Old grid system */
+.one.column, .one.columns {
+  width: 7.33333%;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left; }
+  @media screen and (min-width: 750px) {
+    .one.column.mobile, .one.columns.mobile {
+      display: block !important;
+      width: 100% !important; } }
+  @media screen and (max-width: 750px) {
+    .one.column.desktop, .one.columns.desktop {
+      display: block !important;
+      width: 100% !important; } }
+
+.two.columns {
+  width: 15.66667%;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left; }
+  @media screen and (min-width: 750px) {
+    .two.columns.mobile {
+      display: block !important;
+      width: 99% !important; } }
+  @media screen and (max-width: 750px) {
+    .two.columns.desktop {
+      display: block !important;
+      width: 99% !important; } }
+
+.three.columns {
+  width: 24%;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left; }
+  @media screen and (min-width: 750px) {
+    .three.columns.mobile {
+      display: block !important;
+      width: 99% !important; } }
+  @media screen and (max-width: 750px) {
+    .three.columns.desktop {
+      display: block !important;
+      width: 99% !important; } }
+
+.four.columns {
+  width: 32.33333%;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left; }
+  @media screen and (min-width: 750px) {
+    .four.columns.mobile {
+      display: block !important;
+      width: 99% !important; } }
+  @media screen and (max-width: 750px) {
+    .four.columns.desktop {
+      display: block !important;
+      width: 99% !important; } }
+
+.five.columns {
+  width: 40.66667%;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left; }
+  @media screen and (min-width: 750px) {
+    .five.columns.mobile {
+      display: block !important;
+      width: 99% !important; } }
+  @media screen and (max-width: 750px) {
+    .five.columns.desktop {
+      display: block !important;
+      width: 99% !important; } }
+
+.six.columns {
+  width: 49%;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left; }
+  @media screen and (min-width: 750px) {
+    .six.columns.mobile {
+      display: block !important;
+      width: 99% !important; } }
+  @media screen and (max-width: 750px) {
+    .six.columns.desktop {
+      display: block !important;
+      width: 99% !important; } }
+
+.seven.columns {
+  width: 57.33333%;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left; }
+  @media screen and (min-width: 750px) {
+    .seven.columns.mobile {
+      display: block !important;
+      width: 99% !important; } }
+  @media screen and (max-width: 750px) {
+    .seven.columns.desktop {
+      display: block !important;
+      width: 99% !important; } }
+
+.eight.columns {
+  width: 65.66667%;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left; }
+  @media screen and (min-width: 750px) {
+    .eight.columns.mobile {
+      display: block !important;
+      width: 99% !important; } }
+  @media screen and (max-width: 750px) {
+    .eight.columns.desktop {
+      display: block !important;
+      width: 99% !important; } }
+
+.nine.columns {
+  width: 74%;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left; }
+  @media screen and (min-width: 750px) {
+    .nine.columns.mobile {
+      display: block !important;
+      width: 99% !important; } }
+  @media screen and (max-width: 750px) {
+    .nine.columns.desktop {
+      display: block !important;
+      width: 99% !important; } }
+
+.ten.columns {
+  width: 82.33333%;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left; }
+  @media screen and (min-width: 750px) {
+    .ten.columns.mobile {
+      display: block !important;
+      width: 99% !important; } }
+  @media screen and (max-width: 750px) {
+    .ten.columns.desktop {
+      display: block !important;
+      width: 99% !important; } }
+
+.eleven.columns {
+  width: 90.66667%;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left; }
+  @media screen and (min-width: 750px) {
+    .eleven.columns.mobile {
+      display: block !important;
+      width: 99% !important; } }
+  @media screen and (max-width: 750px) {
+    .eleven.columns.desktop {
+      display: block !important;
+      width: 99% !important; } }
+
+.twelve.columns {
+  width: 99%;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left; }
+  @media screen and (min-width: 750px) {
+    .twelve.columns.mobile {
+      display: block !important;
+      width: 99% !important; } }
+  @media screen and (max-width: 750px) {
+    .twelve.columns.desktop {
+      display: block !important;
+      width: 99% !important; } }
 
 button {
   display: inline-block;
