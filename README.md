@@ -20,7 +20,8 @@ Thanks to the opportunities the open-source development offers us, there are tho
 Add `<link rel="stylesheet" href="css/skeleton-plus.min.css">` to your `<head>`. If you want to use it in production, use the following links from awesome CDN's _(which I really thank)_:
 
 ```
-[CDN-LINK PLACEHOLDER]
+https://cdn.rawgit.com/oldaniel/skeleton-plus/master/css/skeleton-plus.min.css
+https://unpkg.com/skeleton-plus/css/skeleton-plus.min.css
 ```
 
 ### Download it
