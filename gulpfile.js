@@ -5,7 +5,7 @@ const cleanCSS = require('gulp-clean-css');
 const banner = require('gulp-banner');
 const rename = require('gulp-rename');
 
-gulp.task('sass', function () {
+gulp.task('scss', function () {
   return gulp.src('./scss/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['> 1%', 'IE 7'], cascade: false }))
@@ -14,7 +14,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('sass:min', function () {
+gulp.task('scss:min', function () {
   return gulp.src('./scss/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['> 1%', 'IE 7'], cascade: false }))
@@ -24,6 +24,6 @@ gulp.task('sass:min', function () {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('sass:watch', function () {
-  gulp.watch('./scss/*.scss', ['sass', 'sass:min']);
+gulp.task('watch', function () {
+  gulp.watch('./scss/*.scss', ['scss', 'scss:min']);
 });
