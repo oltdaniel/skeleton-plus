@@ -35,3 +35,8 @@ p { margin: 15px 0; }
 .text-left { text-align: left; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
+
+.text-muted { &, * { color: lighten($textColor, $ligthenIntesity - 5); } }
+.text-success { &, * { color: $successColor; } }
+.text-error { &, * { color: $errorColor; } }
+.text-warning { &, * { color: $warningColor; } }
