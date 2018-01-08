@@ -345,6 +345,22 @@
         <hr>
         <br>
 
+        <div class="progress">
+          <div class="bar bg-success" id="pg"></div>
+        </div>
+
+        <script type="text/javascript">
+        function nextProgress(){(p+=val)<0?p+=val=10:p>100&&(p+=val=-10),setTimeout(function(){document.getElementById("pg").style.width=p+"%",nextProgress()},1e3)}var p=100,val=-10;nextProgress();
+        </script>
+
+        <div class="progress">
+          <div class="bar bg-error" style="width:75%"></div>
+        </div>
+
+        <div class="progress">
+          <div class="bar bg-warning" style="width:50%"></div>
+        </div>
+
         <div style="margin: 25px;">
           <a href="#" data-tooltip="Hello user, I'm a tooltip!">Tooltip test</a>
         </div>
