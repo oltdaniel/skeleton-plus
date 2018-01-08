@@ -20,7 +20,14 @@ hr {
 code {
   background-color: $mutedColor;
   display: inline-block;
-  padding: 2px 5px;
+  padding: 4px 8px;
+  font-family: monospace;
+  overflow-x: auto;
+}
+
+pre > code {
+  display: block;
+  white-space: pre;
 }
 
 .cover {

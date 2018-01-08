@@ -1,5 +1,6 @@
 @mixin button_color($color, $change) {
   background-color: $color;
+  transition: 0.2s ease-in-out;
 
   // Actions
   &:hover, &:disabled {
