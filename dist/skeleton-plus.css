@@ -278,33 +278,33 @@ button {
   button:active {
     background-color: black; }
   button.success {
-    background-color: #2ecc71;
+    background-color: #2be379;
     transition: 0.2s ease-in-out; }
     button.success:hover, button.success:disabled {
-      background-color: #69dd9a; }
+      background-color: #6feca4; }
     button.success:active {
-      background-color: #208e4e; }
+      background-color: #17ab55; }
   button.error {
-    background-color: #e74c3c;
+    background-color: #f14735;
     transition: 0.2s ease-in-out; }
     button.error:hover, button.error:disabled {
-      background-color: #ef8b80; }
+      background-color: #f6887d; }
     button.error:active {
-      background-color: #bf2718; }
+      background-color: #cb200e; }
   button.warning {
-    background-color: #f39c12;
+    background-color: #ffb930;
     transition: 0.2s ease-in-out; }
     button.warning:hover, button.warning:disabled {
-      background-color: #f7ba5b; }
+      background-color: #ffd37d; }
     button.warning:active {
-      background-color: #b06f09; }
+      background-color: #e39600; }
 
 input, textarea, select {
   display: block;
   width: 100%;
   padding: 5px;
   margin: 5px 0;
-  border: 1px solid #dddddd;
+  border: 1px solid #e0e0e0;
   outline: none;
   border-radius: 2px;
   background-color: #ffffff; }
@@ -369,13 +369,13 @@ p {
   color: #616161; }
 
 .text-success, .text-success * {
-  color: #2ecc71; }
+  color: #2be379; }
 
 .text-error, .text-error * {
-  color: #e74c3c; }
+  color: #f14735; }
 
 .text-warning, .text-warning * {
-  color: #f39c12; }
+  color: #ffb930; }
 
 table {
   border-collapse: collapse;
@@ -388,7 +388,7 @@ table {
   table td, table th {
     padding: 12px 15px;
     text-align: left;
-    border-bottom: 1px solid #dddddd; }
+    border-bottom: 1px solid #e0e0e0; }
 
 ul ul {
   margin-left: 15px; }
@@ -459,7 +459,7 @@ ul.outer, ul .outer {
 .card {
   margin: 15px;
   border-radius: 1px;
-  border: 0.5px solid #dddddd; }
+  border: 0.5px solid #e0e0e0; }
 
 .card img {
   width: 100%;
@@ -470,7 +470,7 @@ ul.outer, ul .outer {
   padding: 10px; }
 
 .card .footer {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #e0e0e0;
   padding: 5px 15px;
   text-align: right; }
 
@@ -483,31 +483,31 @@ hr {
   outline: none;
   height: 1px;
   width: 60%;
-  background-color: #dddddd; }
+  background-color: #e0e0e0; }
 
 .bg-success {
-  background-color: #2ecc71; }
+  background-color: #2be379; }
 
 .bg-warning {
-  background-color: #f39c12; }
+  background-color: #ffb930; }
 
 .bg-error {
-  background-color: #e74c3c; }
+  background-color: #f14735; }
 
 .bg-success-bright {
-  background-color: #a8ebc4; }
+  background-color: #b2f5ce; }
 
 .bg-warning-bright {
-  background-color: #fad9a4; }
+  background-color: #ffedc9; }
 
 .bg-error-bright {
-  background-color: #f8c9c4; }
+  background-color: #fbc9c4; }
 
 .text-inverted, .text-inverted * {
   color: #ffffff; }
 
 code {
-  background-color: #dddddd;
+  background-color: #e0e0e0;
   display: inline-block;
   padding: 4px 8px;
   font-family: monospace;
@@ -539,7 +539,7 @@ img {
   width: 100%;
   height: 3px;
   margin: 5px;
-  background-color: #dddddd; }
+  background-color: #e0e0e0; }
   .progress .bar {
     transition: width .5s ease-in-out;
     display: block;
