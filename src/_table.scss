@@ -19,18 +19,4 @@ table {
   tr:first-child {
     font-weight: bold;
   }
-
-  td, tr {
-    &.bg-success {
-      background-color: $successColor;
-    }
-
-    &.bg-error {
-      background-color: $errorColor;
-    }
-
-    &.bg-warning {
-      background-color: $warningColor;
-    }
-  }
 }
