@@ -325,6 +325,8 @@ a {
   cursor: pointer; }
   a:hover {
     color: #878787; }
+  a.none {
+    text-decoration: none; }
 
 h1 {
   font-size: 3rem; }
@@ -377,12 +379,6 @@ table {
     border-bottom: 1px solid #dddddd; }
   table tr:first-child {
     font-weight: bold; }
-  table td.bg-success, table tr.bg-success {
-    background-color: #2ecc71; }
-  table td.bg-error, table tr.bg-error {
-    background-color: #e74c3c; }
-  table td.bg-warning, table tr.bg-warning {
-    background-color: #f39c12; }
 
 ul ul {
   margin-left: 15px; }
@@ -392,6 +388,28 @@ ul.inner, ul .inner {
 
 ul.outer, ul .outer {
   list-style-position: outside; }
+
+.card {
+  margin: 15px;
+  border-radius: 1px;
+  border: 0.5px solid #dddddd; }
+
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 1px 1px 0 0; }
+
+.card .content {
+  padding: 10px; }
+
+.card .footer {
+  border-top: 1px solid #dddddd;
+  padding: 5px 15px;
+  text-align: right; }
+
+.card-shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border: none; }
 
 hr {
   border: none;

@@ -1,4 +1,29 @@
-.card {}
+.card {
+  margin: 15px;
+  border-radius: 1px;
+  border: .5px solid $mutedColor;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-radius: 1px 1px 0 0;
+}
+
+.card .content {
+  padding: 10px;
+}
+
+.card .footer {
+  border-top: 1px solid $mutedColor;
+  padding: 5px 15px;
+  text-align: right;
+}
+
+.card-shadow {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  border: none;
+}
 
 .tooltip {}
 
