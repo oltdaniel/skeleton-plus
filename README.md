@@ -32,6 +32,20 @@ https://unpkg.com/skeleton-plus/dist/skeleton-plus.min.css
 
 **Npm**: `$ npm install skeleton-plus`
 
+#### Don't like the new design?
+
+Jump back to version two by using:
+
+**Npm**: `$ npm install skeleton-plus@2.0.1`
+
+```
+https://cdn.rawgit.com/oldaniel/skeleton-plus/v2.0.0/css/skeleton.plus.min.css
+https://cdn.rawgit.com/oldaniel/skeleton-plus/v2.0.0/css/normalize.min.css
+
+https://unpkg.com/skeleton-plus@2.0.1/css/skeleton-plus.min.css
+https://unpkg.com/skeleton-plus@2.0.1/css/normalize.min.css
+```
+
 ### Change it
 
 Clone and mix up things. If you think your edits are interesting for the public, just open a new pull request on that.
