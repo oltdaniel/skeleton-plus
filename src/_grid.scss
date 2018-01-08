@@ -55,6 +55,7 @@
       	}
       }
     }
+	// ELse generate normal class
   } @else {
     .#{nth($columnNames, $i)}.columns  {
       @include column($width);

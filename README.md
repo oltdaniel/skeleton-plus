@@ -20,8 +20,8 @@ Thanks to the opportunities the open-source development offers us, there are tho
 Add `<link rel="stylesheet" href="css/skeleton-plus.min.css">` to your `<head>`. If you want to use it in production, use the following links from awesome CDN's _(which I really thank)_:
 
 ```
-https://cdn.rawgit.com/oldaniel/skeleton-plus/master/css/skeleton-plus.min.css
-https://unpkg.com/skeleton-plus/css/skeleton-plus.min.css
+https://cdn.rawgit.com/oldaniel/skeleton-plus/master/dist/skeleton-plus.min.css
+https://unpkg.com/skeleton-plus/dist/skeleton-plus.min.css
 ```
 
 ### Download it
@@ -40,10 +40,11 @@ Here a brief overview of our folder structure:
 
 ```
 skeleton-plus
-├── css # Our destination folder
+├── dist # Our destination folder
 │   ├── skeleton-plus.css
-│   └── skeleton-plus.min.css
-├── scss # Our source folder
+│   ├── skeleton-plus.min.css
+│   └── index.html
+├── src # Our source folder
 │   ├── _base.scss
 │   ├── _button.scss
 │   ├── _extra.scss
@@ -56,7 +57,6 @@ skeleton-plus
 ├── LICENSE
 ├── README.md
 ├── gulpfile.js
-├── index.html
 └── package.json
 ```
 

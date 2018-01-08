@@ -1,4 +1,4 @@
-/* skeleton-plus <https://github.com/oldaniel/skeleton-plus> , Copyright 2017, Daniel Oltmanns <daniel@thedcdesigns.com> */
+/* skeleton-plus <https://github.com/oldaniel/skeleton-plus> , Copyright 2018, Daniel Oltmanns <daniel@thedcdesigns.com> */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 /*
  Define some variables we will need
@@ -357,6 +357,27 @@ p {
 
 .text-right {
   text-align: right; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: .5em; }
+  @media screen and (max-width: 750px) {
+    table {
+      overflow-x: auto;
+      display: block; } }
+  table td, table th {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd; }
+  table tr:first-child {
+    font-weight: bold; }
+  table td.bg-success, table tr.bg-success {
+    background-color: #2ecc71; }
+  table td.bg-error, table tr.bg-error {
+    background-color: #e74c3c; }
+  table td.bg-warning, table tr.bg-warning {
+    background-color: #f39c12; }
 
 ul ul {
   margin-left: 15px; }
