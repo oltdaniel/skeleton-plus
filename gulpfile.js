@@ -9,7 +9,7 @@ gulp.task('scss', function () {
   return gulp.src('./src/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['> 1%', 'IE 7'], cascade: false }))
-    .pipe(banner('/* skeleton-plus <https://github.com/oldaniel/skeleton-plus> , Copyright 2018, Daniel Oltmanns <daniel@thedcdesigns.com> */\n', {}))
+    .pipe(banner('/* skeleton-plus <https://github.com/oldaniel/skeleton-plus> , Copyright 2018, Daniel Oltmanns <oltmannsdaniel@outlook.com> */\n', {}))
     .pipe(rename('skeleton-plus.css'))
     .pipe(gulp.dest('./dist'));
 });
@@ -19,7 +19,7 @@ gulp.task('scss:min', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['> 1%', 'IE 7'], cascade: false }))
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(banner('/* skeleton-plus <https://github.com/oldaniel/skeleton-plus> , Copyright 2018, Daniel Oltmanns <daniel@thedcdesigns.com> */\n', {}))
+    .pipe(banner('/* skeleton-plus <https://github.com/oldaniel/skeleton-plus> , Copyright 2018, Daniel Oltmanns <oltmannsdaniel@outlook.com> */\n', {}))
     .pipe(rename('skeleton-plus.min.css'))
     .pipe(gulp.dest('./dist'));
 });
