@@ -124,4 +124,15 @@ img {
   .action {
     flex: .5;
   }
+
+  // Extras
+  &.no-flex {
+    display: block;
+
+    // Child elements
+    & > * {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
 }

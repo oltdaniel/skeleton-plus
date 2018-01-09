@@ -568,3 +568,8 @@ img {
   .pagination .action {
     -webkit-box-flex: .5;
     flex: .5; }
+  .pagination.no-flex {
+    display: block; }
+    .pagination.no-flex > * {
+      display: inline-block;
+      margin: 0 10px; }
