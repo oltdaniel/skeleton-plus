@@ -3,6 +3,7 @@ nav {
   max-width: 960px;
   width: 95%;
 
+  // Child elements
   label {
     font-weight: bold;
   }
@@ -20,6 +21,7 @@ nav {
     display: inline-block;
   }
 
+  // Screen query
   @media screen and (max-width: 640px) {
     text-align: center;
 

@@ -32,10 +32,12 @@ small { font-size: .8rem; }
 
 p { margin: 15px 0; }
 
+// aligment
 .text-left { text-align: left; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }
 
+// colors
 .text-muted { &, * { color: lighten($textColor, $ligthenIntesity - 5); } }
 .text-success { &, * { color: $successColor; } }
 .text-error { &, * { color: $errorColor; } }
