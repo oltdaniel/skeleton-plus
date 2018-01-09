@@ -40,3 +40,5 @@ p { margin: 15px 0; }
 .text-success { &, * { color: $successColor; } }
 .text-error { &, * { color: $errorColor; } }
 .text-warning { &, * { color: $warningColor; } }
+
+.text-inverted { &, * { color: $textInvertColor; } }

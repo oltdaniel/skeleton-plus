@@ -1,30 +1,33 @@
+// Cards
 .card {
   margin: 15px;
   border-radius: 1px;
   border: .5px solid $mutedColor;
+
+  // Child elements
+  img {
+    width: 100%;
+    display: block;
+    border-radius: 1px 1px 0 0;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .footer {
+    border-top: 1px solid $mutedColor;
+    padding: 5px 15px;
+    text-align: right;
+  }
+
+  &.card-shadow {
+    box-shadow: $shadowIdle;
+    border: none;
+  }
 }
 
-.card img {
-  width: 100%;
-  display: block;
-  border-radius: 1px 1px 0 0;
-}
-
-.card .content {
-  padding: 10px;
-}
-
-.card .footer {
-  border-top: 1px solid $mutedColor;
-  padding: 5px 15px;
-  text-align: right;
-}
-
-.card-shadow {
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  border: none;
-}
-
+// Horizontal line
 hr {
   border: none;
   outline: none;
@@ -34,6 +37,7 @@ hr {
   background-color: $mutedColor;
 }
 
+// Background colors
 .bg-success { background-color: $successColor; }
 .bg-warning { background-color: $warningColor; }
 .bg-error { background-color: $errorColor; }
@@ -42,8 +46,7 @@ hr {
 .bg-warning-bright { background-color: lighten($warningColor, $ligthenIntesity); }
 .bg-error-bright { background-color: lighten($errorColor, $ligthenIntesity); }
 
-.text-inverted, .text-inverted * { color: $textInvertColor; }
-
+// Code element
 code {
   background-color: $mutedColor;
   display: inline-block;
@@ -57,22 +60,20 @@ pre > code {
   white-space: pre;
 }
 
+// Cover
 .cover {
   min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  // Child elements
+  & > div {
+    flex: 1;
+  }
 }
 
-.cover > div {
-  flex: 1;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
+// Progress bar
 .progress {
   display: block;
   width: 100%;
@@ -86,5 +87,41 @@ img {
     height: 100%;
     width: 100%;
     max-width: 100%;
+  }
+}
+
+// Other stuff
+img {
+  display: block;
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+
+  // Child elements
+  * {
+    text-decoration: none;
+  }
+
+  & > * {
+    flex: 1;
+    padding: 3px;
+
+    &:hover {
+      &, * {
+        color: $textColor;
+      }
+
+      background-color: lighten($mutedColor, 5%);
+      transition: .3s background-color ease-in-out;
+    }
+  }
+
+  .action {
+    flex: .5;
   }
 }

@@ -44,4 +44,18 @@ button {
   &.warning {
     @include button_color($warningColor, 15%);
   }
+
+  // Extras
+  &.btn-shadow {
+    box-shadow: $shadowIdle;
+
+    // Actions
+    &:hover {
+      box-shadow: $shadowTiny;
+    }
+
+    &:active {
+      box-shadow: $shadowHuge;
+    }
+  }
 }
