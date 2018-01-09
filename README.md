@@ -5,7 +5,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/oldaniel/skeleton-plus.svg)](https://github.com/oldaniel/skeleton-plus/network)
 [![npm](https://img.shields.io/npm/dt/skeleton-plus.svg)](https://www.npmjs.com/package/skeleton-plus)
 
-`skeleton-plus` is a fresh looking but still simple css framework.
+`skeleton-plus` is a fresh looking but still simple css framework. _(only ~7kb, gzip => 2.1kb)_
 
 ## About
 
