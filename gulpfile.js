@@ -1,28 +1,29 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var cleanCSS = require('gulp-clean-css');
-var banner = require('gulp-banner');
-var rename = require('gulp-rename');
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
+const banner = require('gulp-banner');
+const rename = require('gulp-rename');
 
-gulp.task('sass', function () {
-  return gulp.src('./scss/skeleton-plus.scss')
+gulp.task('scss', function () {
+  return gulp.src('./src/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['> 1%', 'IE 7'], cascade: false }))
-    .pipe(banner('/* skeleton-plus <https://github.com/oldaniel/skeleton-plus> , Copyright 2016, Daniel Oltmanns <daniel@thedcdesigns.com> */\n', {}))
-    .pipe(gulp.dest('./css'));
+    .pipe(banner('/* skeleton-plus <https://github.com/oldaniel/skeleton-plus> , Copyright 2018, Daniel Oltmanns <oltmannsdaniel@outlook.com> */\n', {}))
+    .pipe(rename('skeleton-plus.css'))
+    .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('sass:min', function () {
-  return gulp.src('./scss/skeleton-plus.scss')
+gulp.task('scss:min', function () {
+  return gulp.src('./src/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({ browsers: ['> 1%', 'IE 7'], cascade: false }))
     .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(banner('/* skeleton-plus <https://github.com/oldaniel/skeleton-plus> , Copyright 2016, Daniel Oltmanns <daniel@thedcdesigns.com> */\n', {}))
+    .pipe(banner('/* skeleton-plus <https://github.com/oldaniel/skeleton-plus> , Copyright 2018, Daniel Oltmanns <oltmannsdaniel@outlook.com> */\n', {}))
     .pipe(rename('skeleton-plus.min.css'))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('sass:watch', function () {
-  gulp.watch('./scss/*.scss', ['sass', 'sass:min']);
+gulp.task('watch', function () {
+  gulp.watch('./src/*.scss', ['scss', 'scss:min']);
 });

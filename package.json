@@ -1,6 +1,6 @@
 {
   "name": "skeleton-plus",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "This is an Plus Version of Skeleton.css http://oldaniel.github.io/skeleton-plus",
   "author": "Daniel Oltmanns <https://github.com/oldaniel>",
   "repository": {
@@ -15,12 +15,12 @@
     "css"
   ],
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-banner": "^0.1.3",
-    "gulp-clean-css": "^2.0.12",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2"
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-banner": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest"
   },
   "scripts": {
     "build-css": "gulp sass",

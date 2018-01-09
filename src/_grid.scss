@@ -1,0 +1,64 @@
+.container {
+	max-width: 960px;
+	width: 95%;
+	margin: 0 auto;
+}
+
+// New flex system
+.grid-flex {
+  display: flex;
+}
+
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+@for $i from 1 through 10 {
+  .flex-#{$i} {
+    flex: $i;
+  }
+}
+
+/* Old grid system */
+@mixin column($width) {
+  width: $width;
+  display: inline-block;
+  margin: 0 .5%;
+  float: left;
+}
+
+// Grid for any screen size
+@for $i from 1 through length($columnNames) {
+	// Calculate width
+  $width: ($i * $columnWidth) + ($i - 1 * 1%);
+
+  // Change columns to column for one
+  @if $i == 1 {
+    .#{nth($columnNames, $i)}.column, .#{nth($columnNames, $i)}.columns  {
+      @include column($width);
+    }
+	// ELse generate normal class
+  } @else {
+    .#{nth($columnNames, $i)}.columns  {
+      @include column($width);
+    }
+  }
+}
+
+// Desktop Only
+@media screen and (max-width: $mobileBreak) {
+	.columns.desktop, .column.desktop {
+		display: block !important;
+		width: 99% !important;
+	}
+}
+
+// Mobile only
+@media screen and (min-width: $mobileBreak) {
+	.columns.mobile, .column.mobile {
+		display: block !important;
+		width: 99% !important;
+	}
+}
