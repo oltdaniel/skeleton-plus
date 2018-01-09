@@ -38,43 +38,27 @@
   @if $i == 1 {
     .#{nth($columnNames, $i)}.column, .#{nth($columnNames, $i)}.columns  {
       @include column($width);
-
-      // Mobile Only
-      @media screen and (min-width: $mobileBreak) {
-      	&.mobile {
-      		display: block !important;
-      		width: 100% !important;
-      	}
-      }
-
-      // Desktop Only
-      @media screen and (max-width: $mobileBreak) {
-      	&.desktop {
-      		display: block !important;
-      		width: 100% !important;
-      	}
-      }
     }
 	// ELse generate normal class
   } @else {
     .#{nth($columnNames, $i)}.columns  {
       @include column($width);
-
-      // Mobile only
-      @media screen and (min-width: $mobileBreak) {
-      	&.mobile {
-      		display: block !important;
-      		width: 99% !important;
-      	}
-      }
-
-      // Desktop Only
-      @media screen and (max-width: $mobileBreak) {
-      	&.desktop {
-      		display: block !important;
-      		width: 99% !important;
-      	}
-      }
     }
   }
+}
+
+// Desktop Only
+@media screen and (max-width: $mobileBreak) {
+	.columns.desktop, .column.desktop {
+		display: block !important;
+		width: 99% !important;
+	}
+}
+
+// Mobile only
+@media screen and (min-width: $mobileBreak) {
+	.columns.mobile, .column.mobile {
+		display: block !important;
+		width: 99% !important;
+	}
 }
