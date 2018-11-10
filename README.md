@@ -1,8 +1,8 @@
 # `skeleton-plus` :ferris_wheel:
 
-[![GitHub issues](https://img.shields.io/github/issues/oldaniel/skeleton-plus.svg)](https://github.com/oldaniel/skeleton-plus/issues)
-[![GitHub stars](https://img.shields.io/github/stars/oldaniel/skeleton-plus.svg)](https://github.com/oldaniel/skeleton-plus/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/oldaniel/skeleton-plus.svg)](https://github.com/oldaniel/skeleton-plus/network)
+[![GitHub issues](https://img.shields.io/github/issues/oltdaniel/skeleton-plus.svg)](https://github.com/oltdaniel/skeleton-plus/issues)
+[![GitHub stars](https://img.shields.io/github/stars/oltdaniel/skeleton-plus.svg)](https://github.com/oltdaniel/skeleton-plus/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/oltdaniel/skeleton-plus.svg)](https://github.com/oltdaniel/skeleton-plus/network)
 [![npm](https://img.shields.io/npm/dt/skeleton-plus.svg)](https://www.npmjs.com/package/skeleton-plus)
 
 `skeleton-plus` is a fresh looking but still simple css framework. _(only ~7kb, gzip => 2.1kb)_
@@ -39,8 +39,8 @@ Jump back to version two by using:
 **Npm**: `$ npm install skeleton-plus@2.0.1`
 
 ```
-https://cdn.rawgit.com/oldaniel/skeleton-plus/v2.0.0/css/skeleton.plus.min.css
-https://cdn.rawgit.com/oldaniel/skeleton-plus/v2.0.0/css/normalize.min.css
+https://cdn.rawgit.com/oltdaniel/skeleton-plus/v2.0.0/css/skeleton.plus.min.css
+https://cdn.rawgit.com/oltdaniel/skeleton-plus/v2.0.0/css/normalize.min.css
 
 https://unpkg.com/skeleton-plus@2.0.1/css/skeleton-plus.min.css
 https://unpkg.com/skeleton-plus@2.0.1/css/normalize.min.css
@@ -88,7 +88,7 @@ Some `gulp` task you should know about:
 
 ## Credits & License
 
-A project by [Daniel Oltmanns](https://github.com/oldaniel).
-Other amazing contributors [here](https://github.com/oldaniel/skeleton-plus/graphs/contributors).
+A project by [Daniel Oltmanns](https://github.com/oltdaniel).
+Other amazing contributors [here](https://github.com/oltdaniel/skeleton-plus/graphs/contributors).
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/oldaniel/skeleton-plus/master/LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/oltdaniel/skeleton-plus/master/LICENSE)
